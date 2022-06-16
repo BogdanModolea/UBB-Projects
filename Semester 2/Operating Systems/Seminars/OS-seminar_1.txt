@@ -1,0 +1,241 @@
+int g;
+
+int main(){
+...
+int v;
+...
+int *p;
+}
+
+
+
+g, v, *p -> stack
+v -> 4 bytes
+p -> 8 bytes
+
+
+
+p = (int*)malloc(sizeof(int)); 	//allocationg memory
+
+void* malloc(size_t);
+
+
+//free(void*);
+
+free(p);
+
+
+const int *c1;		// the value is constant	c1 = &v	not allowd: *c1 = 2;
+int const *c2;		// pointer is constant		c2 = &v;	not allowed another assigment: c2 = p; *c2 = 2 // we are allowed to change the value, not the address
+const int const *c3;	// we are llowed to initialize all of them. We can't change the address of them
+
+
+
+Variables:
+
+1) name		int v (v)
+2) type		int
+3) value		v = 2;
+4) address		a location in the stack where we have a value 2
+
+
+
+
+
+int *(*f)(int *p);		// a pointer function
+				// the name of the pointer is f and the argument is a pointer as an argument and returns a  pointer as an int
+				
+				
+
+
+
+
+Regular expression
+
+\w
+[a-z]		general form: [c1c2c3...cn] -> selection group
+[a-zA-Z]
+any character
+
+
+grep ->interpret reg. exp and search them in files
+grep [opts]
+
+//man grep
+//man printf
+
+
+
+-sth = option
+[-i]		//optional in []
+[-v]
+grep //space\\ ... [f] ...
+
+grep "re" f...	//grep reg. exp and one or more files
+
+
+
+f.txt:
+
+
+	text	abc	123			-> after grep -> just this line
+	a	b	c
+	1	2	3
+	a1	a2	a3
+	
+	
+	
+	
+grep "t" f.txt		//or grep t f.txt
+//print all lines that contains "t"
+//grep read lines
+
+
+
+grep "z" f.txt
+// no output
+
+grep "[a-z]" f.txt
+// all lines that contains characters from that range
+
+
+grep "[0-9]" f.txt
+
+
+
+. -> special character that can substitute any character
+
+grep "." f.txt
+// dot can be replace with any char => all lines
+
+
+
+
+* -> regular opperatiors
+
+grep "a*" f.txt
+* = zero or more times
+. = any char
+
+
++ -> regualar opperatiors
++ = one or more times
+
+grep "a+" f.txt
+lines have at least once a
+
+
+
+{} -> opperatiors
+// match between a and b times
+
+grep "a{3,4}" f.txt
+//all lines that have at leas 3 "a": aaa
+// ex: aaa, aaabb
+
+
+
+grep "a{2}" f.txt
+grep "a{2,}" f.txt	// similar to a+
+grep "a{,3}" f.txt
+
+
+test{,2}
+test
+tes
+testt
+testt
+
+
+
+
+(Reg.Exp)
+(test){1,2}
+test
+testtest
+
+
+
+B.R.E.
+
+Add \ in front of characters, +, {}, ()
+grep "a\{2\}"
+
+
+E.R.E.
+egrep " "  
+grep -e " "
+
+
+\ ->denies its usual usage
+
+
+
+
+\w -> a word character (a char that can be part of a word)
+\s -> white space / tab
+^ -> begining of the line
+$ -> end of the line
+
+grep "^a.*b$" f.txt"		-> restrict to print lines that start with a and end with b
+grep "a.*b" 
+grep "^a"
+grep "c$"
+grep "^abc.*t{3}$"		-> all lines that that start with abc and at the end we have at least 3 t's
+
+grep "a{3,5}.*\s\+e$"		-> all the lines that have a between 3 and 5 times somewhere in the lines, we don't care what we have, at least 1 space and e char at the end
+
+
+
+
+
+
+grade.txt:
+
+name		g1	g2
+
+
+#!cheated
+name		4	2
+
+
+grep -e "^[A-Za-z]\+\s\+[5-9]\s\+[5-9]$"
+	      \w	   10      10
+
+\([5-9]\)||\(10\)
+\([5-9]\)\|\(10\)
+
+egrep "([5-9])\|(10)"
+
+
+grep -i
+     -c
+     -v
+     -q
+     
+     
+echo $?
+v = 10
+echo v // it prints v
+echo $v // it prints 10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
