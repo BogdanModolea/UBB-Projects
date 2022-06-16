@@ -1,6 +1,6 @@
 # UBB-Projects
 
-Almost all my University Laboratories and Seminaries should be there.
+Almost all my University Laboratories and Seminaries work should be there.
 
 <ul>
   <li>:card_file_box: Semester 1
