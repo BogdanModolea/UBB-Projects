@@ -6,27 +6,27 @@ All my University Laboratories and Seminaries should be there.
   <li>:card_file_box: Semester 1
     <ul>
       <li>
-        <a href = "#">
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%201/Algebra">
           🧮 Algebra
         </a>
       </li>
       <li>
-        <a href = "#">
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%201/Computational%20Logic">
           🧩 Computational Logic
         </a>
       </li>
       <li>
-        <a href = "#">
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%201/Computer%20Systems%20Architecture">
           💻 Computer Systems Architecture
         </a>
       </li>
       <li>
-        <a href = "#">
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%201/Fundamentals%20of%20Programming">
           ⌨️ Fundamentals of Programming
         </a>
       </li>
       <li>
-        <a href = "#">
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%201/Mathematical%20Analysis">
           📈 Mathematical Analysis
         </a>
       </li>
