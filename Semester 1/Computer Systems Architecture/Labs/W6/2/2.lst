@@ -1,0 +1,44 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13                                      
+    14                                      ;dd $
+    15                                      
+    16 00000000 3132333435                  a db '1', '2', '3', '4', '5'
+    17                                      
+    18                                      ;la db $ - a
+    19                                  
+    20 00000005 310032003300340035-         b dw '1', '2', '3', '4', '5'
+    20 0000000E 00                 
+    21                                      lb equ ($ - b) / 2   ; -> constant
+    22                                      
+    23 0000000F 310000003200000033-         c dd '1', '2', '3', '4', '5'
+    23 00000018 000000340000003500-
+    23 00000021 0000               
+    24 00000023 05                          lc db ($ - c) / 4
+    25                                      
+    26                                      ;la db b - a
+    27                                      ;lb db (c-b)/2
+    28                                      
+    29 00000024 [00000000]                  dd a            ; -> the address of a in memory
+    30                                      
+    31                                      ;dd $
+    32                                      
+    33                                  
+    34                                  ; our code starts here
+    35                                  segment code use32 class=code
+    36                                      start:
+    37                                          ; ...
+    38                                      
+    39                                          ; exit(0)
+    40 00000000 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    41 00000002 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

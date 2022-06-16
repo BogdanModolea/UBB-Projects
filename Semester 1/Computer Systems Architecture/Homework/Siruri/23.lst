@@ -1,0 +1,58 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13 00000000 0104020408020101            s db 1, 4, 2, 4, 8, 2, 1, 1
+    14                                      ;s db '1', '4', '2', '8'
+    15                                      ;s db '1', '1', '1', '1'
+    16                                      lens equ ($ - s)
+    17 00000008 00<rept>                    d times lens db 0
+    18 00000010 00                          lend db 0
+    19 00000011 00                          apr db 0
+    20                                  
+    21                                  ; our code starts here
+    22                                  segment code use32 class=code
+    23                                      start:
+    24                                          ; Se da un sir de octeti S. Sa se obtina in sirul D multimea elementelor din S.
+    25 00000000 BE[00000000]                    mov esi, s
+    26 00000005 BF[08000000]                    mov edi, d
+    27 0000000A B908000000                      mov ecx, lens                           ; pastram in ecx lungimea sirului S pentru a putea opera bucla
+    28                                          repeta:                                 ; bucla principala pentru a parcurge toate valorile lui S
+    29 0000000F C605[11000000]00                    mov byte[apr], 0                    ; pastram in [apr] numarul de aparitii ale unui nr din S in sirul D
+    30 00000016 81FE[00000000]                      cmp esi, s                          ; comparam pentru a pastra primul element din S                      
+    31 0000001C 741F                                jz next1                            
+    32 0000001E B8[08000000]                            mov eax, d                      ; pastram in eax, pentru a putea compara, valoare sirului D pana in acel moment
+    33 00000023 51                                      push ecx                        ; salvam lungimea sirului S in stiva pentru a o recupera mai tarziu
+    34 00000024 8B0D[10000000]                          mov ecx, [lend]                 ; mutam in ecx lungimea sirului D pentru a-l pargurge cu loop si pentru a verifica daca exista in sirul D valoare curenta din S
+    35                                                  next3:
+    36 0000002A 8A1E                                        mov bl, [esi]               ; mutam in bl valoarea curenta din S
+    37 0000002C 3A18                                        cmp bl, [eax]               ; verificm bl cu valoaraea curenta din D
+    38 0000002E 7506                                        jnz next4                   ; verificam daca valoarea curenta din S exista in sirul D
+    39 00000030 FE05[11000000]                                  inc byte[apr]           ; incrementam numarul de aparitii a valorii din S in sirul D
+    40                                                      next4:
+    41 00000036 40                                          inc eax                     ; calculam urmatorul element din sirul D
+    42 00000037 3A58FF                                      cmp bl, [eax-1]
+    43 0000003A E0EE                                    loopne next3                    ; repetam bucla pentru elementul din D determinat anterior doar daca nu am intalnit deja elementul din S in D
+    44 0000003C 59                                      pop ecx                         ; dupa incheierea buclei, recuperam valoarea sirului S pentru a obtine urmatorul element
+    45                                              next1:
+    46 0000003D 8A06                                mov al, [esi]                       ; mutam in al byte-ul curent din S
+    47 0000003F 46                                  inc esi                             ; mutam pe urmatorul numar din S
+    48 00000040 803D[11000000]00                    cmp byte[apr], 0                    ; verificam daca elementul curent din S are sau nu aparitii in sirul D
+    49 00000047 7509                                jnz next2                           ; sarim peste adaugare daca exista deja elementul in sirul D
+    50 00000049 8807                                    mov [edi], al                   ; pastram elementul curent din S, deoarece nu a fost intalnit in D pana acum
+    51 0000004B 47                                      inc edi                         ; incrementam pe urmatoarea pozitie in D
+    52 0000004C FE05[10000000]                          inc byte[lend]                  ; marim lungimea sirului D
+    53                                              next2:
+    54 00000052 E2BB                            loop repeta                             ; bucla pentru parcurgerea sirului S
+    55                                      
+    56                                          ; exit(0)
+    57 00000054 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    58 00000056 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

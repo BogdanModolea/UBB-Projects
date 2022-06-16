@@ -1,0 +1,68 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern scanf               ; tell nasm that exit exists even if we won't be defining it
+     8                                  extern printf              ; tell nasm that exit exists even if we won't be defining it
+     9                                  extern fscanf               ; tell nasm that exit exists even if we won't be defining it
+    10                                  extern fopen               ; tell nasm that exit exists even if we won't be defining it
+    11                                  extern fread               ; tell nasm that exit exists even if we won't be defining it
+    12                                  extern fprintf               ; tell nasm that exit exists even if we won't be defining it
+    13                                  extern fclose               ; tell nasm that exit exists even if we won't be defining it
+    14                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+    15                                  import scanf msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+    16                                  import printf msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+    17                                  import fscanf msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+    18                                  import fopen msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+    19                                  import fread msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+    20                                  import fprintf msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+    21                                  import fclose msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+    22                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+    23                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    24                                  
+    25                                  ; our data is declared here (the variables needed by our program)
+    26                                  segment data use32 class=data
+    27                                      ; ...
+    28                                  
+    29 00000000 <res 00000004>              a resd 1
+    30 00000004 <res 00000004>              b resd 1
+    31                                      
+    32 00000008 256400                      read_format db "%d", 0
+    33                                      
+    34 0000000B 2564202B202564203D-         print_format db "%d + %d = %d", 13, 0
+    34 00000014 2025640D00         
+    35                                      
+    36                                  ; our code starts here
+    37                                  segment code use32 class=code
+    38                                      start:
+    39                                          ; int a, b
+    40                                          
+    41                                          ;scanf ("%d", &a);
+    42                                          ;scanf ("%d", &b);
+    43                                          ;printf("%d + %d = %d\n", a, b, a + b);
+    44                                      
+    45 00000000 68[00000000]                    push a
+    46 00000005 68[08000000]                    push read_format    
+    47 0000000A FF15[00000000]                  call [scanf]
+    48                                          
+    49 00000010 83C408                          add esp, 4 * 2
+    50                                      
+    51 00000013 68[04000000]                    push b
+    52 00000018 68[08000000]                    push read_format    
+    53 0000001D FF15[00000000]                  call [scanf]
+    54 00000023 83C408                          add esp, 4 * 2
+    55                                      
+    56 00000026 A1[00000000]                    mov eax, [a]
+    57 0000002B 0305[04000000]                  add eax, [b]
+    58 00000031 50                              push eax
+    59 00000032 FF35[04000000]                  push dword [b]
+    60 00000038 FF35[00000000]                  push dword [a]
+    61 0000003E 68[0B000000]                    push print_format
+    62 00000043 FF15[00000000]                  call [printf]
+    63 00000049 83C410                          add esp, 4 * 4
+    64                                          
+    65                                          ; exit(0)
+    66 0000004C 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    67 0000004E FF15[00000000]                  call    [exit]       ; call exit to terminate the program

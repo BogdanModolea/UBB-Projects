@@ -1,0 +1,47 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13                                  
+    14 00000000 3132333435                  a db '1', '2', '3', '4', '5'
+    15 00000005 310032003300340035-         b dw '1', '2', '3', '4', '5'
+    15 0000000E 00                 
+    16 0000000F 310000003200000033-         c dd '1', '2', '3', '4', '5'
+    16 00000018 000000340000003500-
+    16 00000021 0000               
+    17                                  
+    18                                  ; our code starts here
+    19                                  segment code use32 class=code
+    20                                      start:
+    21                                          ;loasb lodsw lodsd  \\  load string byte  \\ load string word ...
+    22                                          
+    23 00000000 BE[00000000]                    mov esi, a
+    24                                          
+    25 00000005 AC                              lodsb
+    26                                          ;mov al, [dsi]
+    27                                          ;if df == 0 dsi++
+    28                                          ;else dsi--
+    29                                          
+    30                                          
+    31 00000006 BE[05000000]                    mov esi, b
+    32                                          
+    33 0000000B 66AD                            lodsw
+    34                                          ; mov ax, [esi]
+    35                                          ;if df == 0 esi = esi + 2
+    36                                          ;else esi = esi - 2
+    37                                          
+    38                                          
+    39                                          
+    40                                          ;mov [mem] ===> [mem]
+    41                                      
+    42                                          ; exit(0)
+    43 0000000D 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    44 0000000F FF15[00000000]                  call    [exit]       ; call exit to terminate the program

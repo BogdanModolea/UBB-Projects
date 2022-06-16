@@ -1,0 +1,100 @@
+
+  shift 
+  
+  shr <dst> <step>
+  
+  shr al, 2
+  
+  b7 b6 b5 b4 b3 b2 b1 b0
+    >  >  >  >  >  >  >
+  b0=>cf
+  
+  0 b7 b6 b5 b4 b3 b2 b1
+  
+  b1=>cf
+  
+  0 0 b7 b6 b5 b4 b3 b2
+  
+  shl <dst> <step>
+  
+  shl al, 2
+  
+  b7 b6 b5 b4 b3 b2 b1 b0
+    <  <  <  <  <  <  <
+  b7=>cf
+  
+  b6 b5 b4 b3 b2 b1 b0 0 
+  
+  b6=>cf
+  
+  b5 b4 b3 b2 b1 b0 0  0
+  
+  sal=shl
+  
+  sar al, 2
+  
+  b7 b6 b5 b4 b3 b2 b1 b0
+    >  >  >  >  >  >  >
+  b0=>cf
+  
+  b7 b7 b6 b5 b4 b3 b2 b1
+  
+  b1=>cf
+  
+  b7 b7 b7 b6 b5 b4 b3 b2
+  
+  rotation
+  
+  rol al, 2
+  
+  b7 b6 b5 b4 b3 b2 b1 b0
+    <  <  <  <  <  <  <
+  b7=>cf
+  
+  b6 b5 b4 b3 b2 b1 b0 b7
+    <  <  <  <  <  <  <
+  b6=>cf
+  
+  b5 b4 b3 b2 b1 b0 b7 b6
+  
+  ror al, 2
+  
+  b7 b6 b5 b4 b3 b2 b1 b0
+    >  >  >  >  >  >  >
+  b0=>cf
+  
+  b0 b7 b6 b5 b4 b3 b2 b1  
+    >  >  >  >  >  >  >
+  b1=>cf
+  
+  b1 b0 b7 b6 b5 b4 b3 b2  
+
+  
+  rcl al, 2
+  
+  b7 b6 b5 b4 b3 b2 b1 b0
+    <  <  <  <  <  <  <
+  b7=>cf
+  
+  b6 b5 b4 b3 b2 b1 b0 cf
+    <  <  <  <  <  <  <
+  b6=>cf
+  
+  b5 b4 b3 b2 b1 b0 cf b7
+  
+  rcr al, 3
+  
+  b7 b6 b5 b4 b3 b2 b1 b0
+    >  >  >  >  >  >  >
+  b0=>cf
+  
+  cf b7 b6 b5 b4 b3 b2 b1  
+    >  >  >  >  >  >  >
+  b1=>cf
+  
+  b0 cf b7 b6 b5 b4 b3 b2  
+
+  b1 b0 cf b7 b6 b5 b4 b3  
+  
+  cf = b2
+  
