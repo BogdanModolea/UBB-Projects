@@ -35,32 +35,32 @@ All my University Laboratories and Seminaries should be there.
   <li>🗃️ Semester 2  
     <ul>
       <li>
-        <a href = "#">
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%202/Data%20Structures%20and%20Algorithms">
           🌲 Data Structures and Algorithms
         </a>
       </li>
       <li>
-        <a href = "#">
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%202/Dynamical%20Systems">
           ⏳ Dynamical Systems
         </a>
       </li>
       <li>
-        <a href = "#">
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%202/Geometry">
           📐Geometry
         </a>
       </li>
       <li>
-        <a href = "#">
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%202/Graph%20Algorithms">
            🥇 Graph Algorithms
         </a>
       </li>
       <li>
-        <a href = "#">
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%202/Object%20Oriented%20Programming">
            🕹️ Object Oriented Programming
         </a>
       </li>
       <li>
-        <a href = "#">
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%202/Operating%20Systems">
            💿 Operating Systems
         </a>
       </li>
