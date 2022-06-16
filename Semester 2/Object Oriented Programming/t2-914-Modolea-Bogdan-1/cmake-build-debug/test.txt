@@ -1,0 +1,2 @@
+Id: 1 | Weight: 102.500000 | Cycle: 12.000000 | Electricity: 2.000000
+Id: 99 | Weight: 99.000000 | Cycle: 9.000000 | Electricity: 6.000000
