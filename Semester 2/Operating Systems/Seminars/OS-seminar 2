@@ -1,0 +1,289 @@
+sed
+===
+
+sed 's/reg1/reg2/g' f...
+
+s = substitute
+g = global
+reg1 = we want to sub
+reg = we want to sub with
+
+
+f.txt
+
+abc 123 tef
+test 12test
+
+sed 's/[a-zA-Z]/0/g' f.txt
+
+sed 's/^[^ ]\+ //' f.txt
+
+sed 's#[^ ]\+$##' f.txt
+
+
+
+sed 'd/pattern/' f...
+
+sed -> just print, doesn't modify
+
+
+sed -i 'd/test/' f.txt
+	-will delete every "test" in the file
+
+sed -i 'd/^#/' f.txt
+
+
+
+sed 'y/reg1/reg2/' f...
+	-y = translate
+	-reg1 = source
+	-reg2 = dest
+	
+	
+sed 'y/ABC...Z/XYZ...G'
+	-instead of A will be printed X
+	
+sed 'y/abc/tdd' f.txt
+
+
+	- i = insert
+	- x = exchange
+	- p = print
+	- A = append
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+
+
+
+
+
+
+awk
+====
+
+
+awk '{ }' f...
+
+BEGIN{
+...
+}
+
+
+END{
+...
+}
+
+
+{
+...
+}
+
+
+
+a = 1;
+print a;
+a = "test" -> error
+
+
+printf("%s\n", s);      == print s;
+
+
+index(source, reg. exp)
+	-where substring is found in the source
+	
+//indexing starts at 1
+
+
+
+
+match(source, reg. exp)
+	-evaluate if reg. exp is found in source
+	
+
+length(" ") / length (arr)
+
+
+split(source, v[, delim]);
+	-v = where we store the array
+	
+
+$0 = the content of the whole line
+print $0
+
+$1
+.
+.
+.
+$9
+
+the first nine fields
+
+
+awk '{print $3}' f.txt
+	-prints only 3rd filed of the line
+	
+aws -F: '{printf("test %s\n", %10);}' f.txt
+     *specify the new delimiter
+
+
+7:2:3:4:10:11:12...
+.
+.
+.
+
+
+
+print $3
+
+
+awk -F: '{sum += $3}
+	 END{
+	    print "sum = " sum;
+	 }' f.txt
+	 
+	 
+	 
+NF = number of fields
+FS = field separator
+NR = number of rows
+
+
+/etc/passwd
+
+
+awk -F: '{ if(index($5, "B")==1)
+		print $5
+	}' /etc/passwd
+	
+	
+	
+awk -F: '{if(index($5, "P") == 1)
+		n++
+	} END{
+		print "We found " n " lines"
+	}' /etc/passwd
+	
+	
+
+
+
+awk -F: 'BEGIN{n=1}
+	 {
+	     split($5, a," ");
+	     if(fr[a[1]] == 0){
+	     	names[n++] = a[1];
+	     }
+	     fr[a[1]]++;
+	 
+	 }
+	 END{
+	 	
+	 	sort_by_fr()
+	 	for(i = 1; i < n; i++){
+	 		printf("%s: %d\n", names[i], fr[names[i]]);
+	 	}
+	 }' /etc/passwd
+
+
+
+
+function sort_by_fr(){
+	not_changed = 1;
+	while(not_changed == 1){
+		not_changed = 0;
+		for(i = 1; i < n - 1; i++){
+			if(fr[names[i]] < fr[names[i + 1]]){
+				aux = fr[names[i]];
+				fr[names[i]] = fr[names[i + 1]];
+				fr[names[i + 1]] = aux;
+				
+				aux2 = names[i + 1];
+				names[i + 1] = names[i];
+				names[i] = aux;
+				
+				not_changed = 1;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+1:2:3:4:5
+
+awk -F: '{
+	  printf("%s ", $1);
+	  printf("%s ", $(NF-1));
+	  
+	  for(i = 3; i < NF - 1; i++){
+	  	prinft("%s ", $i);
+	  }
+	  printf("%s %s\n", $2, $NF);
+	  }' f.txt
+	  
+	  
+	
+	
+
+sed 's/^\([^:]\+\):\([^:]\+\):\(.*\):\([^:]\+\):\([^:]\+\)$/ \1:\4:\3:\2:\5/'
+
+
+
+
+
+
+
+
+
+	
+	
+// all usernames that starts with "T" and logged on a specific tty	
+	
+	last -n #nr (ex: last -n 100)	
+	
+last | grep "^t " | awk '{print $2}' | sort | uniq | sort -k2nr | head
+							   *k = col
+							   *2 = nr of col
+							   *n = numerical
+							   *r = reverse
+							   
+							   
+						
+	  
+
+
+
+
+
+ps = process status
+
+ps axu | awk '{sum += $2; n++;}
+		END {print sum / n;}
+
+
+
+	  
+
+
+
+
+
+	  
+	  
+	  
+	  

@@ -1,0 +1,248 @@
+pipe / Fifo
+
+pipe(int [2])
+
+< 0 error
+>= 0 success
+
+
+
+int main(){
+   int p[2];
+   .
+   .
+   .
+   if(pipe(p) < 0){
+      perror("Unable to create pipe");
+      exit(1);
+   }
+   .
+   .
+   .
+   int f = fork();
+   if(f == 0){
+      close(p[1]);
+      .
+      .
+      .
+      if(read(p[0], buff, size) < 0){
+         perror("Unable to read");
+         exit(2);
+      }
+      .
+      .
+      .
+      close(p[0]);
+      exit(0);
+   }
+   
+   close(p[0]);
+   .
+   .
+   .
+   if(write(p[1], buff, size) < 0){
+      perror("Unable to write");
+      exit(3);
+   }
+   .
+   .
+   .
+   close(p[1]);
+   .
+   .
+   .
+   return 0;
+}
+
+
+
+
+
+
+
+
+void work_p(int rfd, int wfd, int b){
+   while(1){
+      int buff;
+      if(read(rfd, &buff, sizeof(int) < 0){
+         perror("Unable to read");
+         exit(5);
+      }
+         
+      if(b == 1)
+         buff /= (rand() % 2 + 2);
+      else if(b == 2)
+         buff -= (rand() % 9 + 2);
+      else if(b == 3)
+         buff += (rand() % 9 + 2);
+      
+      if(buff <= 0 || buff >= 1000){
+         //cout << b << "\n";
+         printf("Game over\n");
+         exit(0);
+         //break;
+      }
+         
+      if(write(wfd, &n, sizeof(int) < 0){
+         perror("Unable to write");
+         exit(6);
+      }
+   }
+}
+
+
+
+int main(){
+   int p1p2[2], p2p3[2], p3p1[2];
+   if(pipe(p1p2) < 0 || pipe(p2p3) < 0 || pipe(p3p1) < 0){
+      perror("Unable to create pipe");
+      exit(1);
+   }
+   
+   int p2 = fork();
+   if(p2 < 0){
+      perror("Unable to fork");
+      exit(2);
+   }
+   
+   if(p2 == 0){
+      close(p1p2[1]); close(p2p3[0]); close(p3p1[0]); close(p3p1[1]);
+      
+      work_p(p1p2[0], p2p3[1], 2);
+      
+      close(p1p2[0]); close(p2p3[1]);
+      exit(0);
+   }
+   
+   int p3 = fork();
+   if(p3 < 0){
+      perror("Unable");
+      exit(3);
+   }
+   
+   if(p3 == 0){
+      close(p1p2[0]); close(p1p2[1]); close(p2p3[1]); close(p3p1[0]);
+      
+      work_p(p2p3[0], p3p1[1], 3);
+      
+      close(p2p3[0]); close(p3p1[1]);
+      exit(0);
+   }
+   
+   close(p3p1[1]); close(p1p2[0]); close(p2p3[0]); close(p2p3[1]);
+   
+   int r = rand() % 91 + 10;
+   
+   if(write(p1p2[1], &r, sizeof(int) < 0){
+      perror("Unable to write");
+      exit(4);
+   }
+   
+   work_p(p3p1[0], p1p2[1], 1);
+   
+   close(p3p1[0]); close(p1p2[1]);
+   
+   return 0;
+}
+
+
+
+
+
+
+
+
+//p1.c
+
+#define FIFO "f1"
+
+int main(){
+   if(mkfifo(FIFO, 0600) < 0){
+      perror("Unable to create FIFO");
+      exit(1);
+   } 
+   
+   int fd = open(FIFO, O_WRONLY);
+   if(fd < 0){
+      perror("Unable to open");
+      exit(2);
+   }
+   
+   char cmd[101];
+   printf("Enter a cmd: ");
+   scanf("%100s", cmd);
+   int n = strlen(cmd);
+   if(write(fd, &n, sizeof(int) < 0){
+      perror("Unable to write");
+      exit(3);
+   }
+   
+   if(write(fd, cmd, n * sizeof(char) < 0){
+      perror("Unable to read");
+      exit(4);
+   }
+   
+   close(fd);
+   unlink(FIFO); 
+   return 0;
+}
+
+
+
+//p2.c
+
+#define FIFO "f1"
+
+int main(){
+   int fd = open(FIFO, O_RDONLY);
+   
+   if(fd < 0){
+      perror("Unable to open");
+      exit(5);
+   }
+   
+   int len = 0;
+   if(read(fd, &len, sizeof(int) < 0){
+      perror("Unable to read");
+      exit(6);
+   }
+   
+   prinft("The length is %d\n" , len);
+   
+   int read_bytes = 0;
+   char buffer[101];
+   while(read_bytes < len){
+      int partial_read;
+      partial_read = read(fd, buff + read_bytes, (len - read_byres) * sizeof(char));
+      if(partial_read < 0){
+         perror("Unable to read");
+         exit(7);
+      }
+      read_bytes += partial_read;
+   }
+   
+   buffer[len] = 0;
+   
+   int cnt = 0;
+   for(int i = 0; i < len; i++)
+      //cnt += isdigit(buffer[i]); ??
+      cnt += (buffer[i] => '0' && buffer[i] <= '9');
+      
+   cout << cnt << "\n";
+   return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
