@@ -84,7 +84,7 @@ Almost all my University Laboratories and Seminaries work should be there.
         </a>
       </li>
       <li>
-        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%202/Graph%20Algorithms">
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%203/Logical%20and%20Functional%20Programming">
            🗺 Logical and Functional Programming
         </a>
       </li>
