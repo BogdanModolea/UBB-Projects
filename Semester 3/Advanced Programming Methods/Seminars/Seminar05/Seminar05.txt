@@ -1,0 +1,89 @@
+public interface IStmt {
+	...
+	IStmt deepCopy();
+}
+
+
+public class CompStmt implements IStmt {
+	...
+	public IStmt deepCopy() {
+		return new CompStmt(first.deepCOpy(), snd.deepCopy());
+	}
+}
+
+
+public class IfStmt implements IStmt {
+	...
+	public IStmt deepCopy() {
+		return new IfStmt(exp.deepCopy(), thenS.deepCopy(), elseS.deepCopy());
+	}
+}
+
+public class VarDeclStmt implements IStmt {
+	...
+	public IStmt deepCopy() {
+		return new VarDeckStnt(new String(name), type.deepCopy());
+	}
+}
+
+
+public interface Type {
+	...
+	Type deepCopy();
+}
+
+public class IntType implements Type {
+	...
+	public Type deepCopy() {
+		return new IntType();
+	}
+}
+
+public class BoolType implements Type {
+	...
+	public Type deepCopy() {
+		return new BoolType();
+	}
+}
+
+
+public interface Value {
+	...
+	Value deepCopy();
+}
+
+public class IntValue implements Value {
+	...
+	public Value deepCopy() {
+		return new IntValue(val);
+	}
+}
+
+//same for Bool
+
+
+public interface Exp {
+	...
+	Exp deepCopy();
+}
+
+public class ArithExp implements Exp {
+	...
+	public Exp deepCopy() {
+		return new ArithExp(e1.deepCopy(), e2.deepCopy(), op);
+	}
+}
+
+public class ValueExp implements Exp {
+	...
+	public Exp deepCopy() {
+		return new ValueExp(v.deepCopy());
+	}
+}
+
+
+
+
+
+
+

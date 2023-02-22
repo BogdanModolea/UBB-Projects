@@ -1,0 +1,84 @@
+public interface MyIStack<T>{
+	void push(T item);
+
+	T pop() throws MyException;
+
+	boolean isEmpty();
+
+	List<T> getReversed();
+}
+
+public class MyStack<T> implements MyIStack<T>{
+	private Stack<T> stack;
+
+	public MyStack(){
+		stack = new Stack<T>();
+	}
+
+	public void push(T item){
+		stack.push(item);
+	}
+
+	public T pop() throws MyException{
+		T item = stack.pop();
+		if(item == null)
+			throw new MyException("Empty Stack");
+
+		return item;
+	}
+
+	public boolean isEmpty(){
+		return stack.empty();
+	}
+
+	public List<T> getReversed(){
+		List<T> l = Array.asList((T[]) stack.toArray());
+		Collections.reverse(l);
+		return l;
+	}
+}
+
+public interface MyIDictionary<K, V>{
+	...
+}
+
+public class MyDictionary<K, V> implements MyIDictionary{
+	...
+}
+
+public interface MyIList<T>{
+	void add(T item);
+}
+
+public class MyList<T> implements MyIList<T>{
+	private List<T> out;
+
+	public MyList(){
+		out = new ArrayList<T>();
+	}
+
+	public void add(T item){
+		out.add(item);
+	}
+
+	@Override 
+	public String toString(){
+		return out.toString();
+	}
+}
+
+
+public class PrgState{
+	private MyIStack<IStmt> exeStack;
+	
+	private MyIDictionary<String, Value> symTable;
+
+	private MyIList<Value> out;
+
+	public PrgState(MyIStack<IStmt> stk, MyIDictionary<String, Value> symtbl, MyIList<Value> ot, IStmt prg){
+		exeStack = stk;
+		symTable = symtbl;
+		out = ot;
+		stk.push(prg);
+	}
+}
