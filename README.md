@@ -66,4 +66,33 @@ Almost all my University Laboratories and Seminaries work should be there.
       </li>
     </ul>
   </li>
+  <li>🗃️ Semester 3  
+    <ul>
+      <li>
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%203/Advanced%20Programming%20Methods">
+          💼 Advanced Programming Methods
+        </a>
+      </li>
+      <li>
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%203/Computer%20Networks">
+          🌐 Computer Networks
+        </a>
+      </li>
+      <li>
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%203/Databases">
+          📋Databases
+        </a>
+      </li>
+      <li>
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%202/Graph%20Algorithms">
+           🗺 Logical and Functional Programming
+        </a>
+      </li>
+      <li>
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%203/Probabilities%20and%20Statistics">
+           🎰 Probabilities and Statistics
+        </a>
+      </li>
+    </ul>
+  </li>
 </ul>
