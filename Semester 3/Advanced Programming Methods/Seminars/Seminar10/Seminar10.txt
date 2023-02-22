@@ -1,0 +1,17 @@
+Type typecheck(MyDictionary <String, Type> typeEnv) throws MyException {
+	Type t1, t2;
+	t1 = e1.typecheck(typeEnv);
+	t2 = e2.typecheck(typeEnv)
+	
+	if(t1.equals(BoolType)){
+		if(t2.equals(BoolType)){
+			return new BoolType();
+		}
+		else{
+			throw new MyException(...);
+		}
+	}
+	else{
+		throw new MyException(...);
+	}
+}

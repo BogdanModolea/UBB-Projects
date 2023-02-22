@@ -1,0 +1,49 @@
+public class OpenRFileStmt implements IStmt{
+	private Exp exp;
+	
+	public PrgState execute(PrgState prgState) throws MyException{
+		Value result = exp.eval(prgState.getSymTable());
+		if(!result.getType().equalsTo(new StringType())
+			throw new MyException("...");
+		if(prgState.getFileTable().lookup((String)result))
+			throw new MyException("!!!");
+		
+		try{
+			BR br = new BR(new FileReader(result.toString()));	
+		}catch(IOException ex){
+			throw new MyException(ex.getMessage());
+		}
+		prgState.getFileTable().add(result, br);
+	}
+}
+
+
+
+public class ReadFileStmt implements IStmt{
+	private Exp exp;
+	private String id;	
+
+	public PrgState execute(PrgState prgState) throws MyException{
+		Value result = exp.eval(prgState.getSymTable());
+		if(!result.getType().equalsTo(new StringType())
+			throw new MyException("...");
+		if(!prgState.getSymTable().lookup(id))
+			throw new MyException("!!!");
+		if(!id.getType().equalsTo(new IntType())
+			throw new MyException("~~~");
+		StringValue varf = prgState.getSymTable().get(result);
+		if(!prgState.getFileTable().lookup(varf))
+			throw new MyException("```");
+		BR br = new BR(prgState.getFileTable().get(varf));
+		try{
+			
+			int number = 0;
+			String s = br.readLine();
+			number = Integer.parseInt(s)
+		}catch(NumberFormatException() ex){
+			number = 0;
+			//throw new MyException(ex.getMessage());
+		}
+		prgState.getSymTable().put(id, new IntValue(number));
+	}
+}
