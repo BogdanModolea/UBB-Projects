@@ -1,0 +1,151 @@
+; --- a ---
+; dotProduct(l1l2...ln, p1p2...pm) = 
+; = 0, if n = 0
+; = l1*p1 + dotProduct(l2...ln, p2...pm), otherwise
+
+
+(defun dotProduct(l p)
+  (cond
+    ((null l) 0)
+    ((null p) 0)
+    (t (+ (* (car l) (car p)) (dotProduct (cdr l) (cdr p))))
+  )
+)
+
+
+(defun testDotProduct()
+    (assert
+         (and
+         (EQUAL 0 (dotProduct '() '()))
+         (EQUAL 8 (dotProduct '(1 2) '(2 3)))
+         )
+    )
+)
+
+;(testDotProduct)
+
+
+
+; --- b ---
+; findDepth(l1l2...ln, c) = 
+; = c , if n = 0
+; = max(findDepth(l1, c + 1), findDepth(l2...ln, c)) , if l1 is a list
+; = findDepth(l2...ln, c), otherwise
+
+(defun myMax (a b)
+  (cond
+    ((> a b) a)
+    (t b)
+  )
+)
+
+(defun findDepth (l c)
+  (cond
+    ((null l) c)
+    ((listp (car l)) (myMax (findDepth (car l) (+ c 1)) (findDepth (cdr l) c)))
+    (t (findDepth (cdr l) c))
+  )
+)
+
+(defun main(l)
+  (cond
+    (t (findDepth l 1))
+  )
+)
+
+(defun testFindDepth()
+    (assert
+        (and
+        (EQUAL 3 (main '(1 2 3 (4 (5)))))
+        (EQUAL 1 (main '()))
+        )
+    )
+)
+
+;(testFindDepth)
+
+
+
+; --- c ---
+; insert(l1l2...ln, elem) =
+; = list(elem), if n = 0
+; = l1l2...ln , if l1 = elem
+; = {elem} U l1l2...ln, if elem < l1
+; = {l1} U insert(l2...ln, elem)
+
+; sortare(l1l2...ln) = 
+; = nil, if n = 0
+; = insert(sortare(l2...ln), l1) , otherwise
+
+(defun insert (l e)
+  (cond
+    ((null l) (list e))
+    ((= (car l) e) l)
+    ((< e (car l)) (cons e l))
+    (t (cons (car l) (insert (cdr l) e)))
+  )
+)
+
+(defun sortare (l)
+  (cond
+    ((null l) nil)
+    (t (insert (sortare (cdr l)) (car l)))
+  )
+)
+
+(defun testSort()
+    (assert
+         (and
+         (EQUAL '() (sortare '()))
+         (EQUAL '(1 2 3 4 5) (sortare '(1 2 3 5 4 4 1 3 2)))
+         )
+    )
+)
+
+;(testSort)
+
+
+
+; --- d ---
+; intersectie(l1l2...ln, p1p2...pm) = 
+; = nil, if n = 0
+; = {l1} U intersectie(l2...ln, p1p2...pm), if contains(l1, p1p2...pm) true
+; = intersectie(l2...ln, p1p2...pm), otherwise
+
+(defun contains(l e)
+  (cond
+    ((null l) nil)
+    ((equal (car l) e) t)
+    (t (contains (cdr l) e))
+  )
+)
+
+(defun intersectie(l p)
+  (cond
+    ((null l) NIL)
+    ((contains p (car l)) (cons (car l) (intersectie (cdr l) p)))
+    (t (intersectie (cdr l) p))
+  )
+)
+
+(defun testIntersectie()
+    (assert
+         (and
+         (EQUAL '() (intersectie '() '()))
+         (EQUAL '(2 3 4) (intersectie '(1 2 3 4) '(2 3 4 5)))
+         )
+    )
+)
+
+;(testIntersectie)
+
+
+(defun testAll()
+    (testDotProduct)
+    (testFindDepth)
+    (testSort)
+    (testIntersectie)
+)
+
+
+(testAll)

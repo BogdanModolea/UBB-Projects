@@ -1,0 +1,27 @@
+; treeReplace(tree, elem, newElem)
+; = newElem, if tree = elem and tree is an atom
+; = tree, if tree is an atom and tree != elem
+; = treeReplace(tree1, elem, newElem) U treeReplace(tree2, elem, newElem) U ... U treeReplace(treen, elem, newElem), otherwise
+
+(defun treeReplace(tree elem newElem)
+  (cond
+    ((and (atom tree) (equal tree elem)) newElem)
+    ((atom tree) tree)
+    (t (mapcar #' (lambda (a) (treeReplace a elem newElem)) tree))
+  )
+)
+          
+
+(defun testTreeReplace()
+    (assert
+         (and
+          (and
+             (EQUAL '(a (g (c)) (d) (e (f))) (treeReplace '(a (b (c)) (d) (e (f))) 'b 'g))
+             (EQUAL '(a) (treeReplace '(a) 'b 'g)))
+             (EQUAL '(a (b (c)) (d) (e (f))) (treeReplace '(a (b (c)) (d) (e (f))) 'g 'h))
+         )
+    )
+)
+(testTreeReplace)
+
+

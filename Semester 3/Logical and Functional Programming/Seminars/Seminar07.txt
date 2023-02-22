@@ -1,0 +1,158 @@
+1. Depth of a tree -> LISP
+
+depth(tree) = 
+	* 0, if tree is atom
+	* 1 + max(depth(tree(i)), if tree is a list
+
+(defun depth(tree)
+	(cond
+		((atom tree) 0)
+		(t (+ 1 (apply #'max(mapcar #'depth tree))))
+	)
+)
+
+
+
+2. Submultimi -> diferenta intre oricare 2 este multiplu de 3
+
+(6 3 0 5)
+(6 3) (6 0) (3 0) (6 3 0)
+
+
+check(l) = 
+	* F, if |l1 - l2| % 3 != 0
+	* check(l2, ..., ln), if |l1 - l2| % 3 = 0
+	* T, if n = 1
+
+
+subsets(l) =
+	* nil, if n = 0
+	* l1 U subsets(l2, ..., ln), if n > 0
+	* subsets(l2, ..., ln), if n > 0
+
+
+solution(l) = 
+	* check(subsets(l))
+
+
+
+% flow (i)
+% check(L - list)
+check([H1, H2]):-
+    abs(H1 - H2) mod 3 =:= 0,
+    !.
+check([H1, H2 | T]):-
+	abs(H1 - H2) mod 3 =:= 0,
+	check([H2 | T]).
+	
+
+% flow (i, o), (i, i)
+% subsets(L - list, R - list)
+subsets([], []).
+subsets([H1|T], [H1|R]):-
+	subsets(T, R).
+
+subsets([_|T], R):-
+	subsets(T,R).
+
+
+% flow (i, i), (i, o)
+% solution(L - list, R - list)
+solution(L, R):-
+	subsets(L, R),
+	check(R).
+
+
+main(L, R):-
+	findall(R1, solution(L, R1), R).
+
+
+
+
+
+
+3.
+((2 3 4) (6 (7 8) ((7 9) 8)) (6 8) 9) -> ((2 3 4) (6 (8)) 9)
+
+
+len(l1, l2, ..., ln) = 
+	* 0, if L is empty
+	* 1 + len(l2,..., ln), if l1 = atom
+	* len(l2, ..., ln), otherwise
+
+linear(l1,..., ln) = 
+	* T, if L is empty
+	* F, if l1 is list
+	* linear(l2, ..., ln), otherwise
+
+main(l1, ..., ln) = 
+	* [], if L is empty
+	* main(l2, ..., ln), if l1 list, l1 linear and len(l1) % 2 = 0
+	* l1 U main(l2, ..., ln), otherwise
+
+
+
+(defun len(L)
+	(cond
+		((null L) 0)
+		((atom (car L)) (+ 1 (len (cdr L))))
+		(t (len (cdr L)))
+	)
+)
+
+
+(defun linear(L)
+	(cond
+		((null L) t)
+		((listp (car L)) nil)
+		(t (linear (cdr L)))
+	)
+)
+
+
+(defun main(L)
+	(cond
+		((null L) nil)
+		((and (listp (car L)) (and (linear (car L)) (=0 (mod (len (car L)) 2)))) (main (cdr L))
+		(t (cons (car L) (main(cdr L)))
+	)
+)
+
+
+
+
+4. 
+
+combinari(l, k):
+	* l1, if k = 1
+	* l1 U combinari(l2, ..., ln, k - 1), if k > 1
+	* combinari(l2, ..., ln, k), if k >= 1
+
+
+
+% combinari(L - list, k - number, R - list)
+% flow (i, i, o), (i, i, i)
+
+combinari([H|T], 1, [H]).
+
+combinari([H|T], K, [H|R]):-
+	K > 1,
+	combinari(T, K - 1, R).
+
+combinari([_|T], K, R):-
+	K >= 1,
+	combinari(T, K, R).
+
+
+
+
+
+
+
+
+
+
+
+
+
+

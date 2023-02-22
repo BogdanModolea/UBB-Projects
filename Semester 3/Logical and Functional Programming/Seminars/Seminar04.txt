@@ -1,0 +1,37 @@
+onesol(L, R)
+
+findall(R, onesol(L, R), RALL)
+
+Perm[1, 2, 3] - [3, 1, 2]
+
+
+insertel(e, l1l2...ln) = 
+	* [e], n = 0
+	* e U l1l2...ln
+	* l1 U insertel(e, l2...ln)
+
+
+
+perm(l1l2...ln) =
+	insert(l1, perm(l2...ln))
+	null, n = 0
+
+
+
+arr(l1l2...ln, k) = 
+	* [l1], if k = 1 and n >=  1
+	* insertel(l1, arr(l2...ln, k - 1)), if k > 1
+	* arr(l2...ln, k), k >= 1
+
+
+comb(l1l2...ln, k) = 
+	* [l1], if k = 1 and n >= 1
+	* l1 U comb(l2...ln, k - 1), if k > 1
+	* comb(l2...ln, k), if k >= 1 
+
+
+
+subsets(l1l2..ln) = 
+	* null, if n = 0
+	* l1 U subset(l2...ln)
+	* subset(l2...ln)

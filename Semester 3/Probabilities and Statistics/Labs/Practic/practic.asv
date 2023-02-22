@@ -1,0 +1,27 @@
+x = [1001.7, 975.0, 978.3, 988.3, 978.7, 988.9, 1000.3, 979.2, 968.9, 983.5, 999.2, 985.6];
+
+
+alpha = 0.05;
+n = length(x);
+TT = tinv(1 - alpha/2, n - 1);
+m = mean(x);
+s = std(x);
+
+left = m - (s/sqrt(n))*TT;
+right = m + (s/sqrt(n))*TT;
+
+fprintf("The 95 confidence interval is (%.4f, %.4f)\n", left, right);
+
+miu = 995;
+alpha = 0.01;
+[H, P, CI, stats] = ttest(x, miu, alpha, 1);
+% the null hyp is H0: miu = 995
+% the alternative hyp is H1: miu > 995
+if H == 1
+    fprintf("The null hyp is rejected\n");
+    fprintf("The data suggests that the standard is not met\n");
+else
+    fprintf("The null hyp is not rejected\n");
+    fprintf("The data suggests that the standard is met\n");
+end
+

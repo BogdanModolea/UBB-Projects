@@ -1,0 +1,121 @@
+Define a LISP function which merges 2 sorted linear lists wihout keeping the double values.
+
+
+merge(l1,l2,...,ln, p1,p2,...,pm) =
+	* [], n = m = 0
+	* p1,p2,...,pm, n = 0
+	* l1,l2,...,ln, m = 0
+	* l1 U merge(l2,...,ln, p2,...,pm), l1 = p1
+	* l1 U merge(l2,...,ln, p1,p2,...,pm), l1 < p1
+	* p1 U merge(l1,l2,...,ln, p2,...,pm), p1 < l1
+
+
+(defun merge(l p)
+	(cond
+		((null l) p)
+		((null p) l)
+		((= (car l) (car p)) (cons (car l) (merge (cdr l) (cdr p))))
+		((< (car l) (car p)) (cons (car l) (merge (cdr l) p)))
+		((> (car l) (car p)) (cons (car p) (merge l (car p))))
+	)
+)
+
+
+
+Remove all the occ of an element in a nonlinear list
+
+(1 3 (7 b (3) a ((7) 1))), e = 7  => (1 3 (b (3) a (() 1)))
+
+
+removeAll(l1,l2,...,ln, e) = 
+	* [], n = 0
+	* removeAll(l2,...,ln, e), l1 is an atom and l1 = e
+	* removeAll(l1, e) U removeAll(l2,...,ln, e), l1 is a list
+	* l1 U removeAll(l2,...,ln, e)
+
+
+(defun removeAll(l e)
+	(cond
+		((null l) null)
+		((and (atom (car l)) (= (car l) e)) (removeAll (cdr l) e))
+		((listp(car l)) (cons (removeAll(car l e)) removeAll(cdr l e)))
+		(t (cons (car l) removeAll(cdr l e)))
+	)
+)
+
+
+
+Build a list with the positions of the minimum elem of a linear list
+
+(1 2 a b 7 1 3) => (1 6)
+
+elem_min(l1,l2,...,ln) = 
+	* max, n = 0
+	* l1, l1 = elem_min(l2,...,ln) and l1 = number
+	* elem_min(l2,...,ln), l1 > elem_min(l2,...,ln) and l1 = number
+	* elem_min(l2,...,ln), l1 > elem_min(l2,...,ln) or l1 != number
+
+
+(defun elem_min(l)
+	(cond
+		((null l) 10001)
+		(((atom (car l)) (elem_min (cdr l)))
+		((< (car l) (elem_min (cdr l)) (car l))				/* (t (min (car l) (elem_min(cdr l))))
+		((> (car l) (elem_min (cdr l)) (elem_min(cdr l)))			instead of those 2 lines			*/	
+
+
+
+
+elem_poz(l1,l2,...,ln, e, c) = 
+	* [], n = 0
+	* elem_poz(l2,...,ln, e, c + 1), l1 != E
+	* c U elem_poz(l2,...,ln, e, c + 1), l1 = E
+
+
+main(l1,l2,...,ln) = 
+	* elem_poz(l1,l2,...,ln, elem_min(l1,l2,...,ln), 1)
+
+
+
+(defun elem_poz(l e c)
+	(cond 
+		((null l) nil)
+		((equal (car l) e) (cons c (elem_poz(cdr l) e (+ c 1))))
+		(t (elem_poz (cdr l) e (+ c 1)))
+	)
+)
+
+(defun main(l)
+	(elem_poz l (elem_min l) 1)
+)
+
+
+
+
+(defun something(l currMin currListPos P)
+	(cond
+		((null l) nil)
+		((not (numberp (car l)) (something (cdr l) currMin currListPos (+ P 1))
+		((and (atom (car l))(< (car l) currMin)) (something (cdr l) (car l) (list P) (+ P 1)))
+		((equals (car l) currMin) (somthing (cdr l) (car l) (append currListPos (list P)) (+ P 1)))
+		(t (something (cdr l) currMin currListPos (+ P 1))
+	)
+)
+
+
+
+(defun main(l)
+	(something l 10001 nil 1)
+)
+
+
+
+
+
+
+
+
+
+
+
+

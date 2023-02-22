@@ -1,0 +1,168 @@
+(defun triple(x)
+	(* 3 x)
+)
+
+(mapcar #'triple '(1 2 3 4)) 		=>	(list (triple 1) (triple 2) (triple 3) (triple 4))
+								(list 3 6 9 12)
+								(3 6 9 12)
+
+
+
+
+(defun triple (x)
+	(cond 
+		((numberp x) (* 3 x))
+		((atom x) x)
+		(t (mapcar #'triple x))
+	)
+)
+
+
+triple(x) = 
+	* 3x, if x - number
+	* x, if x - nonnumber atom
+	* U triple(xi), if x - list, x = x1, x2, ..., xn
+
+
+
+apply '+ (mapcar ...))
+
+
+Compute the product of all numerical elem from any level in a nonlinear list.
+
+(1 2 3 (4) 5 a b) => 120
+
+
+prod (x) = 
+	* 1, if X is atom and NaN
+	* x, if x is number
+	* 
+
+
+(defun prod(x)
+	(cond 
+		((numberp x) x)
+		((atom x) 1)
+		(t (apply #'* (mapcar #' prod x)))
+	)
+)
+
+
+
+Compute the number of nodes from the even level of an n-ary tree repres as (root (subtree 1) (subtree 2) ... (subtree n)). Root level is 1
+
+
+			A					- 1
+		    / \
+		   B   C					- 2		
+            /\   /
+		 D  E  F					- 3
+          /\   \ /\
+         G  H   IJ K				- 4
+			 /
+		      L					- 5
+
+
+(A (B (D (G) (H)) (E (I)))(C (F (J (L)) (K))))
+
+
+nrNodes(x, lvl) =
+	* 1, if x atom and lvl % 2 = 0
+	* 0, if x atom and lvl % 2 = 1
+	* sum nrNodes(xi, lvl + 1), if x = x1, x2, ..., xn
+
+(defun nrNodes (x lvl)
+	(cond
+		((and (atom x) (equal (mod lvl 2) 0)) 1)
+		((atom x) 0)
+		(t (apply #'+ (mapcar #' (lambda (a) nrNodes(a (+ lvl 1))) x)))
+	)
+)
+
+
+(defun mainNrNodes(x)
+	(nrNodes x 0)
+)
+
+
+
+
+
+Given a nonlinear list compute the nr of sublists (including the initial list) when the first numerical atom is 5
+
+(A 5 (B C D) 2 1 (G (5 H) 7 D) 11 14) -> 3 lists
+
+
+
+
+
+
+
+linearize(x) = 
+	* (), if x is empty list
+	* (x), if x number
+	* (), if x atom
+	* append(linearize(xi))
+
+
+(defun lineazize (x)
+	(cond
+		((null x) nil)
+		((numberp x) (list x))
+		((atom x) nil)
+		(t (apply #'append (mapcar #'linearize x)))
+	)
+)
+
+
+
+check5(x) =
+	* true, linearize(x) returns l and l1 = 5
+	* false, otherwise
+
+(defun check5 (x)
+	(cond 
+		((null (linearize x)) nil)
+		((equal (car (linearize x)) 5) t)
+		(t nil)
+	)
+)
+
+
+
+nrSublists(x) =
+	* 0, if atom(x)
+	* 1 + sum(nrSublists(xi), if x is a list a list and check5(x) is true
+	* sum(nrSublists(xi), if x is a list and check5(x) is false
+
+
+(defun nrSublists(x)
+	(cond
+		((atom x) 0)
+		((check5 x) (+ 1 (apply #'+ (mapcar #' nrSublists x))))
+		((apply #'+ (mapcar #' nrSublists x)))
+	)
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

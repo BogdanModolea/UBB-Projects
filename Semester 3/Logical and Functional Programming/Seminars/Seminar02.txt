@@ -1,0 +1,17 @@
+Tail recursion:
+	1) Uniq solution
+	2) Recursive call is the last call
+
+
+suma([1, 2, 3], _) -> 
+	-> call for s([1, 2, 3], _) -> call for s([2, 3], _) -> call for s([3], _) -> call for s([], 0)
+			then going back
+							    					3 + 0
+								3 + 2				s([3], 3)
+				1 + 5				s([2, 3], 5)
+			s([1, 2, 3], 6)
+
+=> 6
+
+
+

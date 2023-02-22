@@ -1,0 +1,31 @@
+; myAppend(l1l2...ln, p1p2...pm) = 
+; = p1p2...pm, if n = 0
+; = {l1} U myAppend(l2...ln, p1p2...pm), otherwise
+
+; postorder(l1l2l3) = 
+; = nil, if l1l2l3 is empty
+; = myAppend(postorder(l2), myAppend(postorder(l3, list(l1)))), otherwise
+
+
+
+(defun myAppend (l p)
+  (cond
+    ((null l) p)
+    (t (cons (car l) (myAppend (cdr l) p)))
+  )
+)
+
+(defun postorder(l)
+  (cond
+    ((null l) nil)
+    (t (myAppend (postorder (cadr l)) (myAppend (postorder (caddr l)) (list (car l)))))
+  )
+)
+
+(defun testIntersectie()
+    (assert
+         (EQUAL '(B D E C A) (postorder '(A (B) (C (D) (E)))))
+    )
+)
+
+(testIntersectie)
