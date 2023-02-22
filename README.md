@@ -46,7 +46,7 @@ Almost all my University Laboratories and Seminaries work should be there.
       </li>
       <li>
         <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%202/Geometry">
-          📐Geometry
+          📐 Geometry
         </a>
       </li>
       <li>
@@ -80,7 +80,7 @@ Almost all my University Laboratories and Seminaries work should be there.
       </li>
       <li>
         <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%203/Databases">
-          📋Databases
+          📋 Databases
         </a>
       </li>
       <li>
