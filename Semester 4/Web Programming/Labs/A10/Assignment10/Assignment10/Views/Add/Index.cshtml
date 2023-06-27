@@ -1,0 +1,172 @@
+﻿
+@{
+    Layout = null;
+}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Update grades</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ("username" in sessionStorage && "profdata" in sessionStorage) {
+                var temp = JSON.parse(sessionStorage["profdata"]);
+                var size = 4;
+                var page = 0;
+                var total = 2;
+
+                $.get("/ProfessorHome/GetGrades", { group: temp.group, course: temp.course },
+                    function (data, status) {
+                        $("#grades").html(data);
+                    });
+
+                $.get("/ProfessorHome/GetStudents", { group: temp.group, pageSize: size, pageNr: page },
+                    function (data, status) {
+                        $("#students").html(data);
+                    });
+
+                $("#next").click(function () {
+                    if (page >= total - 1)
+                        page = total - 2;
+                    page++;
+                    $.get("/ProfessorHome/GetStudents", { group: temp.group, pageSize: size, pageNr: page },
+                        function (data, status) {
+                            $("#students").html(data);
+
+                            setTimeout(function () {
+                                var table = document.getElementById("students");
+                                var rows = table.getElementsByTagName("tr");
+                                for (i = 0; i < rows.length; i++) {
+                                    var currentRow = rows[i];
+                                    var createClickHandler =
+                                        function (row) {
+                                            return function () {
+                                                document.getElementById("addGrade").style.display = "block";
+                                                var firstname = row.getElementsByTagName("td")[0].innerHTML;
+                                                var lastname = row.getElementsByTagName("td")[1].innerHTML;
+
+                                                document.getElementById("addLabel").innerHTML = "Add grade for " + firstname + " " + lastname;
+
+                                                document.getElementById("addButton").onclick = function () {
+                                                    $.post("/Add/Add", { firstName: firstname, lastName: lastname, newGrade: $('#grade').val(), course: temp.course },
+                                                        function (data, status) {
+                                                            location.reload();
+                                                        })
+                                                }
+                                            };
+                                        };
+
+                                    currentRow.onclick = createClickHandler(currentRow);
+                                }
+                            }, 500);
+                        });
+                });
+
+                $("#prev").click(function () {
+                    if (page <= 0)
+                        page = 1;
+                    page--;
+                    $.get("/ProfessorHome/GetStudents", { group: temp.group, pageSize: size, pageNr: page },
+                        function (data, status) {
+                            $("#students").html(data);
+
+                            setTimeout(function () {
+                                var table = document.getElementById("students");
+                                var rows = table.getElementsByTagName("tr");
+                                for (i = 0; i < rows.length; i++) {
+                                    var currentRow = rows[i];
+                                    var createClickHandler =
+                                        function (row) {
+                                            return function () {
+                                                document.getElementById("addGrade").style.display = "block";
+                                                var firstname = row.getElementsByTagName("td")[0].innerHTML;
+                                                var lastname = row.getElementsByTagName("td")[1].innerHTML;
+
+                                                document.getElementById("addLabel").innerHTML = "Add grade for " + firstname + " " + lastname;
+
+                                                document.getElementById("addButton").onclick = function () {
+                                                    $.post("/Add/Add", { firstName: firstname, lastName: lastname, newGrade: $('#grade').val(), course: temp.course },
+                                                        function (data, status) {
+                                                            location.reload();
+                                                        })
+                                                }
+                                            };
+                                        };
+
+                                    currentRow.onclick = createClickHandler(currentRow);
+                                }
+                            }, 500);
+                        });
+
+                });
+
+
+                $.get("/ProfessorHome/GetStudents", { group: temp.group, pageSize: size, pageNr: page },
+                    function (data, status) {
+                        $("#students").html(data);
+
+                        setTimeout(function () {
+                            var table = document.getElementById("students");
+                            var rows = table.getElementsByTagName("tr");
+                            for (i = 0; i < rows.length; i++) {
+                                var currentRow = rows[i];
+                                var createClickHandler =
+                                    function (row) {
+                                        return function () {
+                                            document.getElementById("addGrade").style.display = "block";
+                                            var firstname = row.getElementsByTagName("td")[0].innerHTML;
+                                            var lastname = row.getElementsByTagName("td")[1].innerHTML;
+
+                                            document.getElementById("addLabel").innerHTML = "Add grade for " + firstname + " " + lastname;
+
+                                            document.getElementById("addButton").onclick = function () {
+                                                $.post("/Add/Add", { firstName: firstname, lastName: lastname, newGrade: $('#grade').val(), course: temp.course },
+                                                    function (data, status) {
+                                                        location.reload();
+                                                    })
+                                            }
+                                        };
+                                    };
+
+                                currentRow.onclick = createClickHandler(currentRow);
+                            }
+                        }, 500);
+                    });
+            }
+            else if ("username" in sessionStorage) {
+                location.href = "ProfessorHome";
+            }
+            else {
+                location.href = "Home";
+            }
+        });
+
+        function goBack() {
+            location.href = "ProfessorHome"
+        }
+
+
+    </script>
+</head>
+<body>
+    <h3>Grades</h3>
+    <div id="grades"></div><br />
+    <div id="students"></div>
+    <input type="button" id="prev" value="Previous" />
+    <input type="button" id="next" value="Next" />
+    <br />
+    <div id="addGrade" style="display: none">
+        <p id="addLabel"></p>
+        <label for="grade">Grade:</label>
+        <input type="text" id="grade" name="grade" value="">
+        <input type="button" id="addButton" value="Add">
+    </div>
+    <br />
+    <input type="button" value="Go Back" onclick="goBack()"/>
+</body>
+</html>

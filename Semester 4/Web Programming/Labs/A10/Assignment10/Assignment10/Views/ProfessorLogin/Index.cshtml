@@ -1,0 +1,42 @@
+﻿
+@{
+    Layout = null;
+}
+<html>
+<head>
+    <title>Login Page</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#button").click(function () {
+                $.post("/ProfessorLogin/Login", { username: $("#username").val(), password: $("#password").val() },
+                    function (data, status) {
+                        if (data["success"] === true) {
+                            var temp = { username: $('#username').val() };
+                            sessionStorage.setItem("username", JSON.stringify(temp));
+                            console.log(JSON.parse(sessionStorage["username"]));
+                            location.href = 'ProfessorHome';
+                        }
+                        else {
+                            alert("Bad credentials! Try again.");
+                            //location.href = 'StudentLogin';
+                        }
+                    });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="col-md-2 col-md-offset-5">
+        <h1>Login</h1>
+        <input type="text" id="username" name="username" class="form-control" placeholder="Enter username">
+        <br>
+        <input type="password" id="password" name="password" class="form-control" placeholder="Enter password">
+        <br>
+        <input id="button" class="btn btn-primary btn-block" type="submit" name="submit" value="Login">
+    </div>
+
+</body>
+</html>

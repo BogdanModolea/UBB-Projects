@@ -1,0 +1,273 @@
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Assignment10.dll.config
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Assignment10.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Assignment10.pdb
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\csc.exe
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\csc.exe.config
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\csc.rsp
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\csi.exe
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\csi.exe.config
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\csi.rsp
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\Microsoft.Managed.Core.targets
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.AppContext.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.Collections.Immutable.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.Console.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.Globalization.Calendars.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.IO.Compression.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.IO.FileSystem.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.Net.Http.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.Net.Sockets.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.Reflection.Metadata.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.ValueTuple.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.Xml.XmlDocument.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.Xml.XPath.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\vbc.exe
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\vbc.exe.config
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\vbc.rsp
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\VBCSCompiler.exe
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\roslyn\VBCSCompiler.exe.config
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Antlr3.Runtime.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Web.Infrastructure.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Newtonsoft.Json.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Web.Helpers.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Web.Mvc.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Web.Optimization.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Web.Razor.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Web.WebPages.Deployment.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Web.WebPages.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Web.WebPages.Razor.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\WebGrease.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Web.Helpers.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Web.Mvc.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Web.Optimization.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Web.Razor.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Web.WebPages.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Web.WebPages.Deployment.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Web.WebPages.Razor.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Newtonsoft.Json.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Antlr3.Runtime.pdb
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\obj\Debug\Assignment10.csprojAssemblyReference.cache
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\obj\Debug\Assignment10.csproj.CoreCompileInputs.cache
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\obj\Debug\Assignment10.csproj.CopyComplete
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\obj\Debug\Assignment10.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\obj\Debug\Assignment10.pdb
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\BouncyCastle.Crypto.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Google.Protobuf.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\K4os.Compression.LZ4.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\K4os.Compression.LZ4.Streams.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\K4os.Hash.xxHash.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Bcl.HashCode.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.EntityFrameworkCore.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.EntityFrameworkCore.Relational.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Extensions.Caching.Abstractions.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Extensions.Caching.Memory.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Extensions.Configuration.Binder.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Extensions.Configuration.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Extensions.DependencyInjection.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Extensions.Logging.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Extensions.Options.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Extensions.Primitives.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\MySql.Data.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Buffers.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Collections.Immutable.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.ComponentModel.Annotations.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Diagnostics.DiagnosticSource.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Memory.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Numerics.Vectors.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Threading.Tasks.Extensions.dll
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Google.Protobuf.pdb
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Google.Protobuf.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\K4os.Compression.LZ4.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\K4os.Compression.LZ4.Streams.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\K4os.Hash.xxHash.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Bcl.HashCode.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.EntityFrameworkCore.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.EntityFrameworkCore.Abstractions.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.EntityFrameworkCore.Relational.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Extensions.Caching.Abstractions.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Extensions.Caching.Memory.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Extensions.Configuration.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Extensions.Configuration.Binder.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Extensions.DependencyInjection.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Extensions.Logging.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Extensions.Options.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\Microsoft.Extensions.Primitives.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Buffers.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Collections.Immutable.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Diagnostics.DiagnosticSource.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Memory.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Numerics.Vectors.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\fac\sem4\wp\Assignment10\Assignment10\Assignment10\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\obj\Debug\Assignment10.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\obj\Debug\Assignment10.pdb
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Assignment10.dll.config
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Assignment10.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Assignment10.pdb
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\csc.exe
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\csc.exe.config
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\csc.rsp
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\csi.exe
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\csi.exe.config
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\csi.rsp
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.AppContext.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.Console.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.IO.Compression.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.Net.Http.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.Net.Sockets.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.ValueTuple.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.Xml.XPath.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\vbc.exe
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\vbc.exe.config
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\vbc.rsp
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\VBCSCompiler.exe
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Antlr3.Runtime.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\BouncyCastle.Crypto.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Google.Protobuf.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\K4os.Compression.LZ4.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\K4os.Compression.LZ4.Streams.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\K4os.Hash.xxHash.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Bcl.HashCode.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.EntityFrameworkCore.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Extensions.Configuration.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Extensions.Logging.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Extensions.Options.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Newtonsoft.Json.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Buffers.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Collections.Immutable.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.ComponentModel.Annotations.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Memory.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Numerics.Vectors.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Web.Helpers.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Web.Mvc.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Web.Optimization.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Web.Razor.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Web.WebPages.Deployment.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Web.WebPages.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Web.WebPages.Razor.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\WebGrease.dll
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Google.Protobuf.pdb
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Google.Protobuf.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\K4os.Compression.LZ4.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\K4os.Compression.LZ4.Streams.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\K4os.Hash.xxHash.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Bcl.HashCode.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.EntityFrameworkCore.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.EntityFrameworkCore.Abstractions.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.EntityFrameworkCore.Relational.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Extensions.Configuration.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Extensions.Logging.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Extensions.Options.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Buffers.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Collections.Immutable.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Memory.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Numerics.Vectors.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Web.Helpers.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Web.Mvc.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Web.Optimization.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Web.Razor.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Web.WebPages.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Web.WebPages.Deployment.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\System.Web.WebPages.Razor.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Newtonsoft.Json.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Antlr3.Runtime.pdb
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\obj\Debug\Assignment10.csproj.AssemblyReference.cache
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\obj\Debug\Assignment10.csproj.CoreCompileInputs.cache
+C:\Users\bogda\Desktop\New folder\Assignment10\Assignment10\obj\Debug\Assignment10.csproj.CopyComplete

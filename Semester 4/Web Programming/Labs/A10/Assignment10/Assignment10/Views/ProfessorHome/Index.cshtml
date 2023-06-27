@@ -1,0 +1,62 @@
+﻿
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ("username" in sessionStorage) {
+                $("#update").click(function () {
+                    if ($('#group').val() !== '' && $('#course').val() !== '') {
+                        var temp = { group: $('#group').val(), course: $('#course').val() };
+                        sessionStorage.setItem("profdata", JSON.stringify(temp));
+                        location.href = "Update";
+                    }
+                });
+
+                $("#add").click(function () {
+                    if ($('#group').val() !== '' && $('#course').val() !== '') {
+                        var temp = { group: $('#group').val(), course: $('#course').val() };
+                        sessionStorage.setItem("profdata", JSON.stringify(temp));
+                        location.href = "Add";
+                    }
+                });
+            }
+            else {
+                location.href = "Home";
+            }
+        });
+
+        function logout() {
+            sessionStorage.clear();
+            location.href = 'Home';
+        }
+    </script>
+</head>
+<body>
+    <h3>Welcome!</h3>
+    <div>
+        <input id="group" class="form-control" type="text" name="group" placeholder="Group">
+        <br>
+        <input id="course" class="form-control" type="text" name="course" placeholder="Course">
+        <br>
+        <input type="submit" class="btn btn-primary" id="update" name="update" value="Update grades for group and course">
+        <br><br>
+        <input type="submit" class="btn btn-primary" id="add" name="add" value="Add grades for group and course">
+    </div>
+    <br />
+    <div>
+        <input class="btn btn-secondary" type="button" id="logout" value="Log out" onclick="logout()" />
+    </div>
+</body>
+</html>

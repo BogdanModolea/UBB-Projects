@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>Controller.LoginController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>HomeController</servlet-name>
+        <servlet-class>Controller.HomeController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TopController</servlet-name>
+        <servlet-class>Controller.TopController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UploadController</servlet-name>
+        <servlet-class>Controller.UploadController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VoteController</servlet-name>
+        <servlet-class>Controller.VoteController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/LoginController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HomeController</servlet-name>
+        <url-pattern>/HomeController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TopController</servlet-name>
+        <url-pattern>/TopController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UploadController</servlet-name>
+        <url-pattern>/UploadController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VoteController</servlet-name>
+        <url-pattern>/VoteController</url-pattern>
+    </servlet-mapping>
+
+</web-app>

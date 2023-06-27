@@ -1,0 +1,78 @@
+﻿
+@{
+    Layout = null;
+}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Update grades</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ("username" in sessionStorage && "profdata" in sessionStorage) {
+                var temp = JSON.parse(sessionStorage["profdata"]);
+                $.get("/ProfessorHome/GetGrades", { group: temp.group, course: temp.course },
+                    function (data, status) {
+                        $("#grades").html(data);
+                    });
+
+                setTimeout(function () {
+                    var table = document.getElementById("grades");
+                    var rows = table.getElementsByTagName("tr");
+                    for (i = 0; i < rows.length; i++) {
+                        var currentRow = rows[i];
+                        var createClickHandler =
+                            function (row) {
+                                return function () {
+                                    document.getElementById("updateGrade").style.display = "block";
+                                    var name = row.getElementsByTagName("td")[0].innerHTML;
+                                    var grade = row.getElementsByTagName("td")[1].innerHTML;
+
+                                    document.getElementById("newGrade").setAttribute("value", grade);
+
+                                    document.getElementById("updateButton").onclick = function () {
+                                        var res = name.split(" ");
+                                        $.post("/Update/Update", { firstName: res[0], lastName: res[1], newGrade: $('#newGrade').val(), course: temp.course },
+                                            function (data, status) {
+                                                location.reload();
+                                            })
+                                    }
+                                };
+                            };
+
+                        currentRow.onclick = createClickHandler(currentRow);
+                    }
+                }, 500);
+            }
+            else if ("username" in sessionStorage) {
+                location.href = "ProfessorHome";
+            }
+            else {
+                location.href = "Home";
+            }
+        });
+
+        function goBack() {
+            location.href = "ProfessorHome"
+        }
+
+    </script>
+</head>
+<body>
+    <h3>Grades</h3>
+    <div id="grades"></div>
+
+    <div id="updateGrade" style="display: none">
+        <label for="newGrade">New grade:</label>
+        <input type="text" id="newGrade" name="newGrade" value="">
+        <input type="button" id="updateButton" value="Update">
+    </div>
+    <br />
+    <input type="button" value="Go Back" onclick="goBack()" />
+</body>
+</html>

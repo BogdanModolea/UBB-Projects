@@ -1,0 +1,7 @@
+.gradient {
+    width: 1000px;
+    height: 100px;
+    background: linear-gradient(to right, rgba(0, 255, 255, 0), rgba(0, 255, 255, 1), rgba(0, 255, 255, 0));
+    border: 2px solid red;
+    border-color: red;
+}

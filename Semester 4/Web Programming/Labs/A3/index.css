@@ -1,0 +1,768 @@
+html {
+	background-color: #f4f4f2;
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.5rem;
+	padding-left: 11.25rem;
+	padding-right: 11.25rem;
+	font-family: "Segoe UI", "Segoe WP", Arial, Sans-Serif;
+	font-weight: normal;
+}
+
+.header {
+	height: 5rem;
+	padding-top: 1.2rem;
+	position: fixed;
+	width: 100%;
+	opacity: 1;
+}
+
+.logo {
+	display: inline-block;
+	height: 100%;
+	width: 15%;
+	opacity: 1;
+}
+
+#imglogo {
+	width: 31px;
+	height: 31px;
+	font-family: "Segoe UI", "Segoe WP", Arial, Sans-Serif;
+
+}
+
+#msn {
+	color: #333;
+	font-family: "Segoe UI", "Segoe WP", Arial, Sans-Serif;
+	position: relative;
+	display: inline-block;
+	font-size: 2.4rem;
+	top: -0.7rem;
+	left: -0.5rem;
+}
+
+.search {
+	position: absolute;
+	height: 75%;
+	width: 700px;
+	top: 20px;
+	left: 290px;
+	box-shadow: 0px 3px 5px #DCDCDB;
+}
+
+.links {
+	padding-top: 10rem;
+	font-weight: 600;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+#search-bar {
+	position: absolute;
+	height: 89%;
+	width: 88.5%;
+	border-radius: 5px 0px 0px 5px;
+	border-color: #DCDCDB;
+}
+
+#search-btn {
+	position: absolute;
+	background-color: rgba(0, 120, 215, .8);
+	width: 10.75%;
+	height: 100%;
+	left: 89.5%;
+	border-radius: 0px 10px 10px 0px;
+	border-color: #DCDCDB;
+}
+
+#search-icon {
+	width: 25px;
+	height: 25px;
+}
+
+.sign-in {
+	position: absolute;
+	height: 100%;
+	width: 10%;
+	left: 77.25%;
+	top: 35%;
+}
+
+#login {
+	position: absolute;
+	left: -10%;
+	width: 45px;
+	height: 45px;
+}
+
+#bell-icon {
+	position: absolute;
+	left: 27%;
+	top: 22%;
+	width: 17px;
+	height: 17px;
+}
+
+#settings-icon {
+	position: absolute;
+	left: 45%;
+	top: 22%;
+	width: 17px;
+	height: 17px;
+}
+
+#outlook {
+	position: absolute;
+	left: 8%;
+}
+
+#outlook1 {
+	width: 25px;
+	height: 25px;
+}
+
+#outlook-link {
+	text-decoration: none;
+	color: #333;
+}
+
+#outlook-text {
+	position: absolute;
+	left: 120%;
+	top: -35%;
+}
+
+#facebook {
+	position: absolute;
+	left: 19.5%;
+}
+
+#facebook1 {
+	width: 25px;
+	height: 25px;
+}
+
+#facebook-link {
+	text-decoration: none;
+	color: #333;
+}
+
+#facebook-text {
+	position: absolute;
+	left: 120%;
+	top: -35%;
+}
+
+#aliexpress {
+	position: absolute;
+	left: 30%;
+}
+
+#aliexpress1 {
+	width: 25px;
+	height: 25px;
+}
+
+#aliexpress-link {
+	text-decoration: none;
+	color: #333;
+}
+
+#aliexpress-text {
+	position: absolute;
+	left: 120%;
+	top: -35%;
+}
+
+#sports {
+	position: absolute;
+	left: 40%;
+
+}
+
+#sports1 {
+	width: 25px;
+	height: 25px;
+}
+
+#sports-link {
+	text-decoration: none;
+	color: #333;
+}
+
+#sports-text {
+	position: absolute;
+	left: 120%;
+	top: -35%;
+}
+
+#office {
+	position: absolute;
+	left: 49%;
+}
+
+#office1 {
+	width: 25px;
+	height: 25px;
+}
+
+#office-link {
+	text-decoration: none;
+	color: #333;
+}
+
+#office-text {
+	position: absolute;
+	left: 120%;
+	top: -35%;
+}
+
+#onlinegames {
+	position: absolute;
+	left: 58%;
+}
+
+#onlinegames1 {
+	width: 25px;
+	height: 25px;
+}
+
+#onlinegames-link {
+	text-decoration: none;
+	color: #333;
+}
+
+#onlinegames-text {
+	/* position: absolute;
+	left: 120%;
+	top: -35%; */
+	margin-top: -27%;
+	margin-left: 35%;
+}
+
+#twitter {
+	position: absolute;
+	left: 70%;
+}
+
+#twitter1 {
+	width: 25px;
+	height: 25px;
+}
+
+#twitter-link {
+	text-decoration: none;
+	color: #333;
+}
+
+#twitter-text {
+	position: absolute;
+	left: 120%;
+	top: -35%;
+}
+
+#skype {
+	position: absolute;
+	left: 80%;
+}
+
+#skype1 {
+	width: 25px;
+	height: 25px;
+}
+
+#skype-link {
+	text-decoration: none;
+	color: #333;
+}
+
+#skype-text {
+	position: absolute;
+	left: 120%;
+	top: -35%;
+	background: -webkit-linear-gradient(rgb(105, 105, 105, 1), rgb(105, 105, 105, 0.4));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-decoration: none;
+}
+
+#arrow {
+	position: absolute;
+	top: 15%;
+	left: 91%;
+	width: 19px;
+	height: 19px;
+}
+
+#hr {
+	position: relative;
+	top: 35px;
+}
+
+.menu {
+	position: relative;
+	top: 35px;
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+#bar {
+	position: absolute;
+	left: 14%;
+	top: -14px;
+	color: #696969;
+}
+
+#weather-icon {
+	position: absolute;
+	left: 0%;
+	width: 25px;
+	height: 25px;
+}
+
+#weather-text {
+	position: absolute;
+	left: 2%;
+	top: 0px;
+	font-weight: bold;
+	color: #696969;
+	text-decoration: none;
+}
+
+#edit-weather {
+	position: absolute;
+	left: 12%;
+	width: 19px;
+	height: 19px;
+}
+
+#africa {
+	position: absolute;
+	left: 15%;
+	top: 0px;
+	color: #696969;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#asia {
+	position: absolute;
+	left: 22%;
+	top: 0px;
+	color: #696969;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#australasia {
+	position: absolute;
+	left: 27%;
+	top: 0px;
+	color: #696969;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#europe {
+	position: absolute;
+	left: 36%;
+	top: 0px;
+	color: #696969;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#latin {
+	position: absolute;
+	left: 43%;
+	top: 0px;
+	color: #696969;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#meast {
+	position: absolute;
+	left: 54%;
+	top: 0px;
+	color: #696969;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#namerica {
+	position: absolute;
+	left: 64%;
+	top: 0px;
+	color: #696969;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#life {
+	position: absolute;
+	left: 75%;
+	top: 0px;
+	color: #696969;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#sportmenu {
+	position: absolute;
+	left: 80%;
+	top: 0px;
+	color: #696969;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#gaming {
+	position: absolute;
+	left: 86%;
+	top: 0px;
+	color: #696969;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#business {
+	position: absolute;
+	left: 92.5%;
+	top: 0px;
+	color: #696969;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#video {
+	position: absolute;
+	left: 99%;
+	top: 0px;
+	color: #696969;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.news {
+	position: relative;
+	top: 90px;
+	left: 10px;
+}
+
+.newsleft {
+	display: inline-block;
+	height: 100%;
+	width: 45%;
+}
+
+.newsright {
+	position: absolute;
+	left: 48%;
+	top: 0px;
+	height: 70%;
+	width: 25%;
+	color: white;
+}
+
+#news1 {
+	width: 100%;
+	height: 60%;
+	border-width: 5px;
+	border-color: white;
+}
+
+#news2 {
+	position: absolute;
+	background-color: white;
+	border-width: 5px;
+	border-color: black;
+	margin-top: 10px;
+	width: 21%;
+	height: 27%
+}
+
+#news2-text {
+	color: #333;
+	position: absolute;
+	left: 2%;
+	margin-top: 10px;
+	margin-right: 10px;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+#daily {
+	position: absolute;
+	top: 65%;
+	left: 2%;
+	width: 18px;
+	height: 18px;
+}
+
+#daily-text {
+	position: absolute;
+	left: 10%;
+	top: 53%;
+	font-size: 1.1rem;
+	color: #666;
+}
+
+#news3 {
+	position: absolute;
+	background-color: white;
+	border-width: 5px;
+	border-color: black;
+	margin-top: 10px;
+	left: 22%;
+	width: 23%;
+	height: 27%
+}
+
+#news3-img {
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 10px;
+	height: 75%;
+	width: 35%;
+}
+
+#news3-text {
+	color: #333;
+	position: absolute;
+	margin-top: 10px;
+	margin-right: 10px;
+	left: 40%;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+#stylemania {
+	position: absolute;
+	left: 40%;
+	top: 69%;
+	width: 18px;
+	height: 18px;
+}
+
+#stylemania-text {
+	position: absolute;
+	left: 48%;
+	top: 59%;
+	font-size: 1.1rem;
+	color: #666;
+}
+
+#news4-img {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.80)), url("images/news4.jpg");
+	background-size: 110%;
+}
+
+.news4-text {
+	color: #fefefe;
+	position: absolute;
+	left: 5%;
+	top: 50%;
+	font-size: 2.0rem;
+	font-weight: bold;
+}
+
+#minister {
+	position: absolute;
+	left: 5%;
+	top: 85%;
+	width: 19px;
+	height: 19px;
+}
+
+#minister-text {
+	position: absolute;
+	left: 13%;
+	top: 80.5%;
+	font-size: 1.2rem;
+	color: #fefefe;
+}
+
+#news5 {
+	position: absolute;
+	background-color: white;
+	border-width: 5px;
+	border-color: black;
+	top: 105%;
+	width: 100%;
+	height: 36%
+}
+
+#news5-img {
+	position: absolute;
+	margin-top: 7px;
+	margin-left: 10px;
+	height: 80%;
+	width: 30%;
+}
+
+#news5-text {
+	color: #333;
+	position: absolute;
+	margin-top: 7px;
+	margin-right: 10px;
+	left: 34%;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+#sportal {
+	position: absolute;
+	left: 34%;
+	top: 65%;
+	width: 18px;
+	height: 18px;
+}
+
+#sportal-text {
+	position: absolute;
+	left: 42%;
+	top: 53%;
+	font-size: 1.1rem;
+	color: #666;
+}
+
+#news6 {
+	position: absolute;
+	background-color: white;
+	border-width: 5px;
+	border-color: black;
+	top: 105%;
+	width: 100%;
+	height: 36%;
+	left: 105%;
+}
+
+#news6-img {
+	position: absolute;
+	margin-top: 7px;
+	margin-left: 10px;
+	height: 80%;
+	width: 30%;
+}
+
+#news6-text {
+	color: #333;
+	position: absolute;
+	margin-top: 7px;
+	margin-right: 10px;
+	left: 34%;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+#football365 {
+	position: absolute;
+	left: 34%;
+	top: 70%;
+	width: 18px;
+	height: 18px;
+}
+
+#football365-text {
+	position: absolute;
+	left: 42%;
+	top: 59%;
+	font-size: 1.1rem;
+	color: #666;
+}
+
+#news7 {
+	position: absolute;
+	background-color: white;
+	border-width: 5px;
+	border-color: black;
+	top: 147%;
+	width: 100%;
+	height: 39%
+}
+
+#news7-img {
+	position: absolute;
+	margin-top: 7px;
+	margin-left: 10px;
+	height: 80%;
+	width: 30%;
+}
+
+#news7-text {
+	color: #333;
+	position: absolute;
+	margin-top: 7px;
+	margin-right: 10px;
+	left: 34%;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+#sun {
+	position: absolute;
+	left: 34%;
+	top: 65%;
+	width: 18px;
+	height: 18px;
+}
+
+#sun-text {
+	position: absolute;
+	left: 42%;
+	top: 53%;
+	font-size: 1.1rem;
+	color: #666;
+}
+
+#news8 {
+	position: absolute;
+	background-color: white;
+	border-width: 5px;
+	border-color: black;
+	top: 147%;
+	width: 100%;
+	height: 39%;
+	left: 105%;
+}
+
+#news8-img {
+	position: absolute;
+	margin-top: 7px;
+	margin-left: 10px;
+	height: 80%;
+	width: 30%;
+}
+
+#news8-text {
+	color: #333;
+	position: absolute;
+	margin-top: 7px;
+	margin-right: 10px;
+	left: 34%;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+#tdd {
+	position: absolute;
+	left: 34%;
+	top: 65%;
+	width: 18px;
+	height: 18px;
+}
+
+#tdd-text {
+	position: absolute;
+	left: 42%;
+	top: 53%;
+	font-size: 1.1rem;
+	color: #666;
+}

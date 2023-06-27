@@ -1,0 +1,40 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>See Grades</title>
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ("username" in sessionStorage) {
+                var temp = JSON.parse(sessionStorage["username"]);
+                console.log(temp.username);
+                $.get("/StudentHome/GetStudentGrades", { username: temp.username },
+                    function (data, status) {
+                        $("#maindiv").html(data);
+                    });
+            }
+            else {
+                location.href = 'Home';
+            }
+        });
+
+        function logout() {
+            sessionStorage.clear();
+            location.href = 'Home';
+        }
+    </script>
+</head>
+<body>
+    <h3>Welcome!</h3>
+    Your grades:
+    <div id="maindiv"></div><br/>
+    <br />
+    <input class="btn btn-secondary" type="button" id="logout" value="Log out" onclick="logout()"/>
+</body>
+</html>

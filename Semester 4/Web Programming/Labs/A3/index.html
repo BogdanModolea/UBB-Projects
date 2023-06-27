@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>MSN UBB Edition</title>
+</head>
+<body>
+  <header class="header">
+    <a href="https://www.msn.com/en-xl">
+      <div class="logo">
+        <img src="images/msn-logo.svg" alt="" id="imglogo">
+        <p id="msn">msn</p>
+      </div>
+    </a>
+    <div class="search">
+      <input type="text" id="search-bar">
+        <form action="https://www.msn.com/en-xl">
+          <button type="submit" id="search-btn">
+            <img src="images/search-icon.svg" alt="" id="search-icon">
+          </button>
+        </form>
+    </div>
+    <div class="sign-in">
+      <a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=d7b530a4-7680-4c23-a8bf-c52c121d2e87&scope=User.Read%20openid%20profile%20offline_access&redirect_uri=https%3A%2F%2Fwww.msn.com%2Fstaticsb%2Fstatics%2Flatest%2F0%2Fauth%2Fauth-redirect.html&client-request-id=ca98dd11-43b7-420f-b4db-f031d2cafae7&response_mode=fragment&response_type=code&x-client-SKU=msal.js.browser&x-client-VER=2.24.0&client_info=1&code_challenge=ZjqWL46Y1EyLUquJehNuLvcR3tHIRrteHyqyN0TV1jw&code_challenge_method=S256&prompt=select_account&nonce=8a86ed51-2ffb-4586-ab1c-2c69c85e132a&state=eyJpZCI6ImVkZDA4NjJhLWUxOWItNDdiNi04M2VlLTg5MjQ1YTdiZjkzZCIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D%7C%257B%2522appType%2522%253A%2522homePage%2522%252C%2522authRedirJsVer%2522%253A%25222.10%2522%252C%2522buildVersion%2522%253A%252220230315.57%2522%252C%2522msalJsVer%2522%253A%25222.24.0%2522%252C%2522returnUrl%2522%253A%2522https%253A%252F%252Fwww.msn.com%252Fen-xl%2522%257D&edge_suppress_profile_switch=1">
+        <img id="login" src="images/login.svg">
+      </a>
+      <img id="bell-icon" alt="settings icon" src="images/bell.png"></a>
+      <img id="settings-icon" alt="settings icon" src="images/settings-icon.svg"></a>
+    </div>
+  </header>
+
+  <div class="links">
+    <a id="outlook-link" href="https://outlook.com/">
+      <div id="outlook">
+        <img id="outlook1" alt="outlook" src="images/outlook.png">
+        <p id="outlook-text">Outlook.com</p>
+      </div>
+    </a>
+    <a id="facebook-link" href="https://facebook.com/">
+      <div id="facebook">
+        <img id="facebook1" alt="facebook" src="images/facebook.png">
+        <p id="facebook-text">Facebook</p>
+      </div>
+    </a>
+    <a id="aliexpress-link" href="https://aliexpress.com/">
+      <div id="aliexpress">
+        <img id="aliexpress1" alt="aliexpress" src="images/aliexpress.png">
+        <p id="aliexpress-text">Aliexpress</p>
+      </div>
+    </a>
+    <a id="sports-link" href="https://www.msn.com/en-xl/sports?ocid=StripeOCID&cvid=21c0741589e545a59e121063e0cef6b7&ei=11">
+      <div id="sports">
+        <img id="sports1" alt="sports" src="images/sports.png">
+        <p id="sports-text">Sport</p>
+      </div>
+    </a>
+    <a id="office-link" href="https://www.microsoft.com/en-us/microsoft-365/microsoft-office?ranMID=46194&ranEAID=xoqYgl4JDe8&ranSiteID=xoqYgl4JDe8-LNVKXOLf4XnGj1ghy7WMqw&epi=xoqYgl4JDe8-LNVKXOLf4XnGj1ghy7WMqw&irgwc=1&OCID=AID2200057_aff_7805_1243925_&tduid=%28ir__1wmxbsn1vokfb22pd1stsnibvm2x6y03rly3x1mh00%29%287805%29%281243925%29%28xoqYgl4JDe8-LNVKXOLf4XnGj1ghy7WMqw%29%28%29&irclickid=_1wmxbsn1vokfb22pd1stsnibvm2x6y03rly3x1mh00">
+      <div id="office">
+        <img id="office1" alt="office" src="images/office.png">
+        <p id="office-text">Office</p>
+      </div>
+    </a>
+    <a id="onlinegames-link" href="https://www.msn.com/en-xl/play?ocid=ogme1&cvid=20f292ba59764a1b81bae290a4aeee0c&ei=26/">
+      <div id="onlinegames">
+        <img id="onlinegames1" alt="onlinegames" src="images/onlinegames.png">
+        <p id="onlinegames-text">OnlineGames</p>
+      </div>
+    </a>
+    <a id="twitter-link" href="https://twitter.com/">
+      <div id="twitter">
+        <img id="twitter1" alt="twitter" src="images/twitter.png">
+        <p id="twitter-text">Twitter</p>
+      </div>
+    </a>
+    <a id="skype-link" href="https://www.skype.com/ro/">
+      <div id="skype">
+        <img id="skype1" alt="skype" src="images/skype.png">
+        <p id="skype-text">Skype</p>
+      </div>
+    </a>
+    <img id="arrow" alt="right-arrow" src="images/arrow.png">
+  </div>
+
+  <hr id="hr">
+
+  <div class="menu">
+    <a href="https://www.msn.com/en-xl/weather/today/Cluj-Napoca,Cluj,Romania/we-city?iso=RO&el=R1ojr7EBvRWd1sVw1Jr1zw%3D%3D">
+      <img src="images/weather.png" alt="" id="weather-icon">
+    </a>
+    <a href="https://www.msn.com/en-xl/weather/today/Cluj-Napoca,Cluj,Romania/we-city?iso=RO&el=R1ojr7EBvRWd1sVw1Jr1zw%3D%3D" id="weather-text">
+      CLUJ-NAPOCA / 8°C
+    </a>
+    <a href="https://www.msn.com/en-xl/#">
+      <img id="edit-weather" alt="edit" src="images/edit.png">
+    </a>
+    <p id="bar">|</p>
+    <a id="africa" href="https://www.msn.com/en-xl/africa">AFRICA</a>
+		<a id="asia" href="https://www.msn.com/en-xl/asia">ASIA</a>
+		<a id="australasia" href="https://www.msn.com/en-xl/australasia">AUSTRALASIA</a>
+		<a id="europe" href="https://www.msn.com/en-xl/europe">EUROPE</a>
+		<a id="latin" href="https://www.msn.com/en-xl/latinamerica">LATIN AMERICA</a>
+		<a id="meast" href="https://www.msn.com/en-xl/middleeast">MIDDLE EAST</a>
+		<a id="namerica" href="https://www.msn.com/en-xl/northamerica">NORTH AMERICA</a>
+		<a id="life" href="https://www.msn.com/en-xl/lifestyle">LIFE</a>
+		<a id="sportmenu" href="https://www.msn.com/en-xl/sport">SPORT</a>
+		<a id="gaming" href="https://www.msn.com/en-xl/esports">GAMING</a>
+    <a id="business" href="https://www.msn.com/en-xl/money">BUSINESS</a>
+    <a id="video" href="https://www.msn.com/en-xl/video">VIDEO</a>
+  </div>
+
+  <div class="news">
+    <article class="newsleft">
+			<a href="https://www.msn.com/en-xl/news/other/he-has-to-stop-saying-it-kompany-begs-pep-to-cool-manchester-city-talk/ar-AA18MHS8?ocid=hpmsn&cvid=c16eb68e7a3847c896e6834f8cfe5e9a&ei=40">
+        <img id="news1" alt="guardiola" src="images//news1.PNG">
+      </a>
+      <a href="https://www.msn.com/en-xl/news/other/what-am-i-teaching-my-children-without-saying-a-word/ar-AA18Mqqw?ocid=hpmsn&cvid=732535b08da043be9c055bf38deca26b&ei=18">
+        <div id="news2">
+          <p id="news2-text">What am I teaching my children without saying a word?</p>
+        <img id="daily" alt="daily" src="images/daily.png">
+          <p id="daily-text">The Daily Monitor</p>
+        </div>
+      </a>
+			<a href="https://www.msn.com/en-xl/news/other/kristen-stewart-for-chanel-the-new-spring-summer-2023-campaign/ss-AA18NaK4?ocid=hpmsn&cvid=732535b08da043be9c055bf38deca26b&ei=11">
+        <div id="news3">
+          <img id="news3-img" alt="summer" src="images/news3.jpg">
+            <p id="news3-text">Kristen Stewart For Chanel: the new spring summer 2023 campaign.</p>
+          <img id="stylemania" alt="stylemania" src="images/style.png">
+            <p id="stylemania-text">Style Mania</p>
+			  </div>
+      </a>
+		</article>
+    <article class="newsright">
+			<a href="https://www.msn.com/en-xl/news/other/latin-finance-ministers-meet-in-panama-under-shadow-of-us-bank-crisis/ar-AA18NnhP?ocid=hpmsn&cvid=4b51b098dc744a278f891f98aa8b0685&ei=21">
+        <div id="news4">
+          <div id="news4-img"></div>
+            <p class="news4-text">Latin finance ministers meet <br>in Panama under shadow of...</p>
+          <img id="minister" alt="minister" src="images/tuko.png">
+            <p id="minister-text">Tuko</p>
+        </div>
+      </a>
+			<a href="https://www.msn.com/en-xl/news/other/laliga-the-10-footballers-with-the-highest-salaries/ss-AA18p5ez?ocid=hpmsn&cvid=ae4d0bf0cad64b81bcd261f4dedb6da0&ei=8">
+        <div id="news5">
+          <img id="news5-img" alt="laliga" src="images/news5.jpg">
+          <p id="news5-text">LaLiga: the 10 footballers with the highest salaries</p>
+          <img id="sportal" alt="sportal" src="images/sportal.png">
+          <p id="sportal-text">Sportal</p>
+			  </div>
+      </a>
+      <a href="https://www.msn.com/en-xl/news/other/laliga-the-10-footballers-with-the-highest-salaries/ss-AA18p5ez?ocid=hpmsn&cvid=ae4d0bf0cad64b81bcd261f4dedb6da0&ei=8">
+        <div id="news6">
+          <img id="news6-img" alt="premierleague" src="images/news6.jpg">
+          <p id="news6-text">Aston Villa 3-0 Bournemouth: Brooks back but Cherries squashed by Villans</p>
+          <img id="football365" alt="football365" src="images/365.png">
+          <p id="football365-text">Football365</p>
+			  </div>
+      </a>
+      <a href="https://www.msn.com/en-xl/news/other/laliga-the-10-footballers-with-the-highest-salaries/ss-AA18p5ez?ocid=hpmsn&cvid=ae4d0bf0cad64b81bcd261f4dedb6da0&ei=8">
+        <div id="news7">
+          <img id="news7-img" alt="MLB" src="images/news7.jpg">
+          <p id="news7-text">Who are the MLB stars most likely to be traded this year?</p>
+          <img id="sun" alt="sun" src="images/sun.png">
+          <p id="sun-text">Sports Unlimited News</p>
+			  </div>
+      </a>
+      <a href="https://www.msn.com/en-xl/news/other/laliga-the-10-footballers-with-the-highest-salaries/ss-AA18p5ez?ocid=hpmsn&cvid=ae4d0bf0cad64b81bcd261f4dedb6da0&ei=8">
+        <div id="news8">
+          <img id="news8-img" alt="premierleague" src="images/news8.jpg">
+          <p id="news8-text">A world without chocolate?! In less than 30 years it could be a reality</p>
+          <img id="tdd" alt="The Daily Digest" src="images/tdd.png">
+          <p id="tdd-text">The Daily Digest</p>
+			  </div>
+      </a>
+		</article>
+  </div>
+</body>
+</html>
