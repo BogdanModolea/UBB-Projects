@@ -1,0 +1,1 @@
+SELECT * FROM Fan where fanID = 4

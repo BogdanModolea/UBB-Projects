@@ -1,0 +1,78 @@
+Use Case Diagram (UCD)
+
+- UCD allows us to disscribe the possible usage scenarios (use case) that a system is developed for
+
+
+https://www.google.com/search?q=use+case+diagram+actors&tbm=isch&ved=2ahUKEwiyjqKSmMn9AhVOkicCHS_GCF0Q2-cCegQIABAA&oq=use+case+diagram+actors&gs_lcp=CgNpbWcQAzIHCAAQgAQQEzIICAAQCBAeEBMyCAgAEAgQHhATOgQIIxAnOgYIABAeEBNQ6R1YjyRgtiVoAHAAeACAAaYBiAHAB5IBAzEuNpgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=XtkGZLLnF86knsEPr4yj6AU&bih=754&biw=1536#imgrc=9edk-SuSSX7y8M
+
+Use Cases (UC)
+-> describes functionality expected from the system to be developed
+-> represented as an ellipse (or alternatively as a rectangle with a small ellipse in the corner)
+
+Actors
+-> entities that interacts with the system
+-> represented as a stick figure or using the stereotype <<actor>>
+
+
+System boundary (Subject)
+-A client that places an order
+-Another actor that is banking system
+
+
+
+Associations
+-> between actors and use cases
+-> can have <<initiate>> as stereotype to indicate the actor that initiates communication
+
+Include
+-> between use cases
+ex:					     <<include>>
+	ATM client	----- withdraw money ----------->
+		    	----- deposit  money -----------> Validate card
+			----- transfer money ----------->
+
+
+Extends
+-> between two use cases
+ex:					     <<extend>>
+	ATM client	----- deposit money <---------- check online HELP
+
+
+
+Generalization
+-> between actors or between use cases
+ex:						  <<include>>
+	ATM client	---- make ATM transaction -----------> card validation
+			   ^	   ^   	    ^      <<extend>>
+			   |	   |	    |     <---------- check online HELP
+			withdraw deposit transfer
+			money	  money	  money
+
+
+
+
+
+Exercise:
+A restaurant has many waiters and one cook. For each, the application opens a window. The waiters take orders from clients and introduce them using their windows.
+An order contains the table number, the dishes and the quantity for each type. After an order was introduced, it is sent to the cook where the list of orders is updated.
+The cook prepares the food and after they are ready he marks the corresponding order as finished. 
+Automatically this order appears as a ready order in the waiters window (and may be delivered) and is deleted from the list of the cook.
+Statistics are required, such as finding out how many times a dish has been ordered. CRUD functionality is also required, at least for dish types.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

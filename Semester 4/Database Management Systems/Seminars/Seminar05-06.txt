@@ -1,0 +1,126 @@
+Seminar 5
+
+Performance Tuning in SQL Server
+
+Methodology:
+1. Identity waits(locks, transactions, I/O)
+2. Correlate waits with queues
+3. Drill dom to the db/file level
+4. Drill down to process level
+5. Tune problematic queries
+
+
+1. sys_dm_os_wait_stats
+	-> wait type			(resource waits, external waits, queue waits)
+	-> waiting_task count		\
+	-> wait_time_ms			-> indicate a prob.
+	-> max_wait_time_ms
+	-> signal_wait_time
+
+
+2. sys_dm_os_performance_counters
+	-> cat. of the counter
+	-> counter name
+	-> instance name (db)
+	-> cnt value
+	-> -"- type 	-> actual value | time based, cumulative value | value/base; ratio; percent
+
+
+3. DB Date file / Log file
+	sys_dm_io_virtuals_file_stats	dbID	fID
+					NULL	NULL
+	DB_ID, FILE_IDEX
+	num_of_reads/writes
+	num_of_bytes_read/written
+	io_stall_write_ms
+		 read
+
+
+4. batch, proc, func, query
+	-> LEFT(str, n)
+	-> parser
+	-> Sql Profiler
+
+
+5. Indexes
+	-> sort, filter, join, group, deadlock
+	-> cl/ncl, single/multi-col indexex, covering indexes, indexed views (with SCHEMABINDING)
+	-> select operations
+	-> cost of a query
+
+
+
+	- graphical execution plan ctrl + L
+	- SET STATISTICS IO ON 	-> scan count
+		   		-> logical read
+				-> read-ahead r
+				-> physical r.
+	- SET STATISTICS TIME ON -> CPU time
+				 -> elapsed time
+	- SET STATISTICS XML
+	- SET STATISTICS PROFILE
+	- SET SHOWPLAN_TEXT ON
+	- SET SHOWPLAN_ALL ON
+	- SET SHOWPLAN_XML ON
+
+! FILTER Predicate
+Joins (tables + conds)
+result set size
+list of indexes
+
+
+
+
+
+
+
+
+
+
+
+- Isolation levels
+1. Read Uncommited: Dirty Reads prob, no Share locks
+2. Read Commited: Non-repeatable reads problem; S locks releasedas soon as the select stms finishes
+3. Repeatable Read: Phantom Reads problem; S locks released as soon as T finishes
+4. Serializable: -,,- + key range locks
+
+Also iso levels: X locks are released as soon as T finishes
+
+
+
+
+
+I 
+1. c
+2. c
+3. b, c, d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

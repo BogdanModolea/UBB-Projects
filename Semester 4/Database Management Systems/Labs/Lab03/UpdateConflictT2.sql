@@ -1,0 +1,8 @@
+BEGIN TRAN
+UPDATE Fan
+SET fanName = 'Updated by Transaction 2'
+WHERE fanID = 11;
+
+--ALTER DATABASE esportLeague SET ALLOW_SNAPSHOT_ISOLATION ON
+--UPDATE Fan SET dob = '2002-05-05' WHERE fanID = 11
+--SELECT * FROM Fan
