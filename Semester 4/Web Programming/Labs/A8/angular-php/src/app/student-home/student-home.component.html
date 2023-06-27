@@ -1,0 +1,26 @@
+<!-- <ul id="gradesContainer">
+    <li class="grades" *ngFor="let currentGrade of grades">
+        {{currentGrade}}
+    </li>
+</ul> -->
+
+<div *ngIf="isNull()">
+  <table id="gradesContainer">
+      <thead>
+        <tr>
+          <!-- <th>#</th> -->
+          <th>Course</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let currentGrade of grades; let i = index">
+              <!-- <td>{{ i + 1 }}</td> -->
+              <td>{{ currentGrade[0] }}</td>
+              <td>{{ currentGrade[1] }}</td>
+          </tr>
+      </tbody>
+    </table>
+
+    <button (click)="logout()">Logout</button>
+</div>

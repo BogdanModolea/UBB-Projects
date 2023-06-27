@@ -1,0 +1,20 @@
+<div class="col-md-2 col-md-offset-5">
+    <h2>Student Login</h2>
+    <form name="studentLoginForm">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" name="username" #username><br><br>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="text" class="form-control" id="password" name="password" #password><br><br>
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="getStudent(username.value, password.value)">Login</button>
+    </form>
+
+
+    <!-- <h1>Login</h1>
+    <label for="group">Username</label>
+    <input type="number" id="group" name="group" #group><br><br>
+    <button id="testButton" class="group" (click)="getAllStudents(group.value)">Create account</button> -->
+</div>

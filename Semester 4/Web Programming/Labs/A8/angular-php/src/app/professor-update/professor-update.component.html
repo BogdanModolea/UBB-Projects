@@ -1,0 +1,35 @@
+<table id="gradesContainer">
+    <thead>
+      <tr>
+        <th>Student ID | </th>
+        <th>Student Username | </th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let currentGrade of grades; let i = index">
+            <!-- <td>{{ i + 1 }}</td> -->
+            <td>{{ currentGrade[0] }}</td>
+            <td>{{ currentGrade[1] }}</td>
+            <td>{{ currentGrade[2] }}</td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+
+  <div class="col-md-2 col-md-offset-5">
+    <h2>Update Grades</h2>
+    <form name="studentLoginForm">
+        <div class="form-group">
+            <label for="studentID">Student ID</label>
+            <input type="text" class="form-control" id="studentID" name="studentID" #studentID><br><br>
+        </div>
+        <div class="form-group">
+            <label for="grade">New Grade</label>
+            <input type="text" class="form-control" id="grade" name="grade" #grade><br><br>
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="updateGrade(studentID.value, grade.value)">Update</button>
+    </form>
+</div>

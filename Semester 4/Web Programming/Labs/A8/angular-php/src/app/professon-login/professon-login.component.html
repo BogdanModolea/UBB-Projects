@@ -1,0 +1,14 @@
+<div class="col-md-2 col-md-offset-5">
+    <h2>Professor Login</h2>
+    <form name="studentLoginForm">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" name="username" #username><br><br>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="text" class="form-control" id="password" name="password" #password><br><br>
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="getProfessor(username.value, password.value)">Login</button>
+    </form>
+</div>

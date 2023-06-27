@@ -1,0 +1,11 @@
+<body *ngIf="isProfessorNull()">
+	<div id="login-buttons" class="col-md-2 col-md-offset-5">
+		<h3>Login as:</h3>
+		<button type="button" class="btn btn-primary btn-block"
+			[routerLink]="['/student-login']">Student</button>
+		<button type="button" class="btn btn-primary btn-block"
+		[routerLink]="['/professor-login']">Professor</button>
+	</div>
+</body>
+
+<router-outlet></router-outlet>
