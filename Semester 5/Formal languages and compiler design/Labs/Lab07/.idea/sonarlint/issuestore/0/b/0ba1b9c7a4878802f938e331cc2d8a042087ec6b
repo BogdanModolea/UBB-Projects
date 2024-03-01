@@ -1,0 +1,34 @@
+
+E	java:S106"+Replace this use of System.out by a logger.(¸‘ï€ÿÿÿÿÿ
+@	java:S106	"+Replace this use of System.out by a logger.(—ùš×
+E	java:S106
+"+Replace this use of System.out by a logger.(”¡¿šøÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(›»ä»
+@	java:S106"+Replace this use of System.out by a logger.(¤—Ğÿ
+E	java:S106"+Replace this use of System.out by a logger.(½²Ûòùÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ïîÜÿüÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ïÚâÀşÿÿÿÿ
+g
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(¦P
+E	java:S106"+Replace this use of System.out by a logger.(å£Â¡üÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(€ê®…
+@	java:S106 "+Replace this use of System.out by a logger.(Á‡ş”
+@	java:S106!"+Replace this use of System.out by a logger.(ŸåŠŠ
+@	java:S106#"+Replace this use of System.out by a logger.(ºù„†
+@	java:S106$"+Replace this use of System.out by a logger.(œˆÔü
+E	java:S106&"+Replace this use of System.out by a logger.(Ñ¼¨Õùÿÿÿÿ
+E	java:S106("+Replace this use of System.out by a logger.(ïïÛåşÿÿÿÿ
+E	java:S106)"+Replace this use of System.out by a logger.(ëÈñÓúÿÿÿÿ
+E	java:S106+"+Replace this use of System.out by a logger.(ÊÙ•üÿÿÿÿ
+@	java:S106,"+Replace this use of System.out by a logger.(£ÒĞ¨
+@	java:S106."+Replace this use of System.out by a logger.(ãå’î
+E	java:S1060"+Replace this use of System.out by a logger.(ÿ¥æ¦úÿÿÿÿ
+@	java:S1062"+Replace this use of System.out by a logger.(ÕÒÛş
+@	java:S1066"+Replace this use of System.out by a logger.(º‡µ¨
+?	java:S1069"+Replace this use of System.out by a logger.(ÙÚè(
+@	java:S106;"+Replace this use of System.out by a logger.(šĞ·É
+E	java:S106>"+Replace this use of System.out by a logger.(î‡ó©ùÿÿÿÿ
+@	java:S106A"+Replace this use of System.out by a logger.(ùÄ•ï
+E	java:S106D"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ
+U
+java:S1128":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ

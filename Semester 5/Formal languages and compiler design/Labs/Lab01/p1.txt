@@ -1,0 +1,20 @@
+// the max of 3 numbers
+
+letInt a;
+read(a);
+letInt b;
+read(b);
+letInt c;
+read(c);
+
+letInt maxim;
+maxim = a;
+
+if(b > maxim) {
+	maxim = b;
+}
+if(c > maxim) {
+	maxim = c;
+}
+
+print(maxim);

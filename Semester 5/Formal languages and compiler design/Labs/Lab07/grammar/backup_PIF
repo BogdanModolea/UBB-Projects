@@ -1,0 +1,96 @@
+letInt
+IDENTIFIER
+;
+read
+(
+IDENTIFIER
+)
+;
+letInt
+IDENTIFIER
+;
+read
+(
+IDENTIFIER
+)
+;
+letInt
+IDENTIFIER
+;
+read
+(
+IDENTIFIER
+)
+;
+letInt
+IDENTIFIER
+;
+IDENTIFIER
+=
+IDENTIFIER
+;
+if
+(
+IDENTIFIER
+>
+IDENTIFIER
+)
+{
+IDENTIFIER
+=
+IDENTIFIER
+;
+}
+if
+(
+IDENTIFIER
+>
+IDENTIFIER
+)
+{
+IDENTIFIER
+=
+IDENTIFIER
+;
+}
+print
+(
+IDENTIFIER
+)
+;
+
+
+
+
+public void loadFile(String path) {
+        try {
+            Scanner scanner = new Scanner(new File(path));
+            this.nonTerminals = new HashSet<>(Arrays.asList(scanner.nextLine().split(" ")));
+            this.terminals = new HashSet<>(Arrays.asList(scanner.nextLine().split(" ")));
+            this.startSymbol = scanner.nextLine();
+
+            this.productions = new LinkedHashMap<>();
+            while (scanner.hasNextLine()) {
+                getProductionFromInput(scanner.nextLine());
+            }
+
+            this.isEnchanced = false;
+        }
+        catch (FileNotFoundException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    public void getProductionFromInput(String input) {
+        String[] handSide = input.split("->");
+
+        List<String> leftSide = Arrays.asList(handSide[0].split(" "));
+
+        String[] rightSide = handSide[1].split("\\|");
+        Set<List<String>> rightSideProductions = Arrays.stream(rightSide)
+                .map(production -> Arrays.asList(production.split(" ")))
+                .collect(Collectors.toSet());
+
+        this.productions.putIfAbsent(leftSide, new ArrayList<>());
+        this.productions.get(leftSide).addAll(rightSideProductions);
+    }

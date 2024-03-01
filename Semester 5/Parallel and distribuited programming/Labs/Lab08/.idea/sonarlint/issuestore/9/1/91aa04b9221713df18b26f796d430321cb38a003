@@ -1,0 +1,16 @@
+
+h
+java:S1192"FDefine a constant instead of duplicating this literal "Rank " 4 times.(²²ˆ¤ûÿÿÿÿ8Ä¼áÇÏ1
+0
+java:S1220""Move this file to a named package.
+L	java:S106"+Replace this use of System.out by a logger.(²²ˆ¤ûÿÿÿÿ8Ë¼áÇÏ1
+G	java:S106"+Replace this use of System.out by a logger.(³“” 8Í¼áÇÏ1
+|
+java:S6201"ZReplace this instanceof check and cast with 'instanceof SubscribeMessage subscribeMessage'(¿ı«Éûÿÿÿÿ8™øæÉÏ1
+L	java:S106"+Replace this use of System.out by a logger.(Šö§Šşÿÿÿÿ8Î¼áÇÏ1
+G	java:S106"+Replace this use of System.out by a logger.(ïè Í8Î¼áÇÏ1
+t
+java:S6201"RReplace this instanceof check and cast with 'instanceof WriteMessage writeMessage'(«“‘ƒüÿÿÿÿ8œøæÉÏ1
+L	java:S106"+Replace this use of System.out by a logger.(óùĞÅûÿÿÿÿ8Î¼áÇÏ1
+G	java:S106"+Replace this use of System.out by a logger.(úÒ©İ8Ï¼áÇÏ1
+L	java:S106""+Replace this use of System.out by a logger.(„Şÿÿÿÿÿ8Ï¼áÇÏ1

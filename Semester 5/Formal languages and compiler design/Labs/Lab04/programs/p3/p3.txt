@@ -1,0 +1,10 @@
+letInt n;
+letInt sum = 0;
+letInt x;
+letInt i;
+read(n);
+for(i = 0; i < n; i ++) {
+	read(x);
+	sum += x;
+}
+print(sum);

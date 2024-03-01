@@ -1,0 +1,6 @@
+A|S
+a|b|c
+S
+S::=a S a
+S::=b S b
+S::=c

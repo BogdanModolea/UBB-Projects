@@ -1,0 +1,19 @@
+program|stmtlist|cmpstmt|stmt|simplestmt|structstmt|declaration|simpletype|assignstmt|ifstmt|readstmt|printstmt|term|relation|condition|expression
+;|{|}|+|-|*|/|)|(|read|print|IDENTIFIER|CONST|=|if|else|letInt|letString|<|<=|==|<>|=>|>|,
+program
+program::=cmpstmt
+stmtlist::=stmt|stmtlist stmt
+cmpstmt::={ stmtlist }
+stmt::=simplestmt ;|structstmt
+simplestmt::=declaration|assignstmt|readstmt|printstmt
+structstmt::=cmpstmt|ifstmt
+declaration::=simpletype IDENTIFIER
+simpletype::=letInt|letString
+assignstmt::=IDENTIFIER = expression
+ifstmt::=if ( condition ) { stmt } else { stmt }
+readstmt::=read ( IDENTIFIER )
+printstmt::=print ( IDENTIFIER )|print ( CONST )
+term::=IDENTIFIER|CONST
+relation::=<|<=|==|<>|=>|>
+condition::=expression relation expression
+expression::=term

@@ -1,0 +1,12 @@
+
+G	java:S106+"+Replace this use of System.out by a logger.(¿Å±Ò8àÕÌÎ1
+G	java:S106,"+Replace this use of System.out by a logger.(ôûÕô8 àÕÌÎ1
+n
+java:S34576"Q%n should be used in place of \n to produce the platform-specific line separator.(Ë·ë¯8¦àÕÌÎ1
+G	java:S1066"+Replace this use of System.out by a logger.(Ë·ë¯8¦àÕÌÎ1
+n
+java:S3457?"Q%n should be used in place of \n to produce the platform-specific line separator.(Ë·ë¯8©àÕÌÎ1
+G	java:S106?"+Replace this use of System.out by a logger.(Ë·ë¯8ªàÕÌÎ1
+X	java:S125Z"<This block of commented-out lines of code should be removed.(÷ßöü8±àÕÌÎ1
+X
+java:S11445";Remove this unused private "multiplyRegularWrapper" method.(æÎ8»àÕÌÎ1

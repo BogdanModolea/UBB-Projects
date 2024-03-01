@@ -1,0 +1,9 @@
+
+g	java:S1125"FDefine and throw a dedicated exception instead of using a generic one.(Ê“Åıÿÿÿÿ8ÑåªğÆ1
+G	java:S106!"+Replace this use of System.out by a logger.(ÍÎÉ 8úèªğÆ1
+F
+java:S5413>")Verify that "remove()" is used correctly.(ôêÍ8“Á±ğÆ1
+V
+java:S1128"4Remove this unused import 'java.util.LinkedHashSet'.(à€¼úÿÿÿÿ8ÄéªğÆ1
+L
+java:S1128"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ8ÅéªğÆ1

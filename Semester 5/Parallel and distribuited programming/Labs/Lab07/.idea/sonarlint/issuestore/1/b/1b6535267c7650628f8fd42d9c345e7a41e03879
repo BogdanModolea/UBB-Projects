@@ -1,0 +1,9 @@
+
+r	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”İşÿÿÿÿ8÷•ÕÌÎ1
+m	java:S1179"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–Ïñ¦8÷•ÕÌÎ1
+r	java:S117:"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œœ¶¸ûÿÿÿÿ8ø•ÕÌÎ1
+r	java:S117;"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µÚ¾ûÿÿÿÿ8ø•ÕÌÎ1
+m	java:S117="QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªœó¢8ø•ÕÌÎ1
+m	java:S117>"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šÂ¨À8ø•ÕÌÎ1
+W
+java:S1118":Add a private constructor to hide the implicit public one.(Õ¦“æ8†–ÕÌÎ1

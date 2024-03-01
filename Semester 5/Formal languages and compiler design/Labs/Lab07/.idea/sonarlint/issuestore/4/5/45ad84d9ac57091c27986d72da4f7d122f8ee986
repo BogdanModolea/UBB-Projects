@@ -1,0 +1,28 @@
+
+g
+java:S20955"EUse try-with-resources or close this "Scanner" in a "finally" clause.(óòñìşÿÿÿÿ8³©Ó1
+L	java:S106	"+Replace this use of System.out by a logger.(şÅÈëıÿÿÿÿ8é‘Ó1
+G	java:S106
+"+Replace this use of System.out by a logger.(„ Ü´8ê‘Ó1
+G	java:S106"+Replace this use of System.out by a logger.(«†Šê8ë‘Ó1
+L	java:S106"+Replace this use of System.out by a logger.(½ŸÌÿÿÿÿÿ8ì‘Ó1
+L	java:S106"+Replace this use of System.out by a logger.(Š¶È˜üÿÿÿÿ8ì‘Ó1
+G	java:S106"+Replace this use of System.out by a logger.(°àéĞ8í‘Ó1
+L	java:S106"+Replace this use of System.out by a logger.(ŒãÕŠøÿÿÿÿ8î‘Ó1
+L	java:S106"+Replace this use of System.out by a logger.(ïÚâÀşÿÿÿÿ8ï‘Ó1
+L	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ï‘Ó1
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(æ¡„í8ñ‘Ó1
+G	java:S106"+Replace this use of System.out by a logger.(€ê®…8û‘Ó1
+L	java:S106#"+Replace this use of System.out by a logger.(î‡ó©ùÿÿÿÿ8ı‘Ó1
+L	java:S106&"+Replace this use of System.out by a logger.(´ƒÓşÿÿÿÿ8ş‘Ó1
+L	java:S106("+Replace this use of System.out by a logger.(¬‚»üÿÿÿÿ8ÿ‘Ó1
+L	java:S106*"+Replace this use of System.out by a logger.(ë™Êÿúÿÿÿÿ8€’Ó1
+L	java:S106,"+Replace this use of System.out by a logger.(äÚãûüÿÿÿÿ8’Ó1
+G	java:S106."+Replace this use of System.out by a logger.(¸ë¹‰8‚’Ó1
+G	java:S1060"+Replace this use of System.out by a logger.(§«…Ô8‚’Ó1
+G	java:S1062"+Replace this use of System.out by a logger.(‹ã¥8ƒ’Ó1
+L	java:S106@"+Replace this use of System.out by a logger.(”Ò¦¢ûÿÿÿÿ8‹’Ó1
+G	java:S106F"+Replace this use of System.out by a logger.(ûºÀ£8’Ó1
+L	java:S106I"+Replace this use of System.out by a logger.(ı™øøÿÿÿÿ8–’Ó1
+L	java:S106T"+Replace this use of System.out by a logger.(ı™øøÿÿÿÿ8¦şÓ1

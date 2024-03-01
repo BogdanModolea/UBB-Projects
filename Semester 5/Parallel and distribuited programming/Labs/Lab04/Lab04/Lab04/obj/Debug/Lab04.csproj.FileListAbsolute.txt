@@ -1,0 +1,7 @@
+D:\.DPP\Lab04\Lab04\Lab04\bin\Debug\Lab04.exe
+D:\.DPP\Lab04\Lab04\Lab04\bin\Debug\Lab04.pdb
+D:\.DPP\Lab04\Lab04\Lab04\obj\Debug\Lab04.csproj.AssemblyReference.cache
+D:\.DPP\Lab04\Lab04\Lab04\obj\Debug\Lab04.csproj.SuggestedBindingRedirects.cache
+D:\.DPP\Lab04\Lab04\Lab04\obj\Debug\Lab04.csproj.CoreCompileInputs.cache
+D:\.DPP\Lab04\Lab04\Lab04\obj\Debug\Lab04.exe
+D:\.DPP\Lab04\Lab04\Lab04\obj\Debug\Lab04.pdb

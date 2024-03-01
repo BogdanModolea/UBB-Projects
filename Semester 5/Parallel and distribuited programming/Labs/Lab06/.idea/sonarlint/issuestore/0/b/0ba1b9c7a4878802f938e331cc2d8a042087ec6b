@@ -1,0 +1,14 @@
+
+“
+java:S1130$"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(º™Ú78±äªğÆ1
+c
+java:S1128"ARemove this unused import 'java.util.concurrent.ExecutorService'.(æ÷–£ùÿÿÿÿ8¾äªğÆ1
+]
+java:S1128	";Remove this unused import 'java.util.concurrent.Executors'.(äåÒÛÿÿÿÿÿ8¿äªğÆ1
+W
+java:S1128
+":Remove this unused import 'java.util.concurrent.TimeUnit'.(Æ™ş8ÁäªğÆ1
+h
+java:S1128"FRemove this unused import 'java.util.concurrent.atomic.AtomicBoolean'.(§­‹¼üÿÿÿÿ8ÂäªğÆ1
+M
+java:S1068"0Remove this unused "THREAD_COUNT" private field.(Ÿ¦ø×8ËäªğÆ1

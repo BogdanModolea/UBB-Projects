@@ -1,0 +1,27 @@
+program statement_list compound_statement mod_expression statement simple_statement structure_statement declaration primitive_declaration array_declaration simple_type assignment_statement if_statement while_statement read_statement write_statement term relation condition add_expression subtract_expression multiply_expression divide_expression ar_expression
+start ; { } + - * / ) ( read write IDENTIFIER CONST add sub mul mod div array [ ] = if else while int string char < <= == != => > ,
+program
+program->start compound_statement
+statement_list->statement|statement_list statement
+compound_statement->{ statement_list }
+statement->simple_statement ;|structure_statement
+simple_statement->declaration|assignment_statement|read_statement|write_statement
+structure_statement->compound_statement|if_statement|while_statement
+declaration->primitive_declaration|array_declaration
+primitive_declaration->simple_type IDENTIFIER
+array_declaration->array simple_type IDENTIFIER [ ]
+simple_type->int|string|char
+assignment_statement->IDENTIFIER = ar_expression
+if_statement->if ( condition ) { statement } else { statement }
+while_statement->while ( condition ) compound_statement
+read_statement->read ( IDENTIFIER )
+write_statement->write ( IDENTIFIER )|write ( CONST )
+term->IDENTIFIER|CONST
+relation-><|<=|==|!=|=>|>
+condition->ar_expression relation ar_expression
+add_expression->add ( ar_expression , ar_expression )
+subtract_expression->sub ( ar_expression , ar_expression )
+multiply_expression->mul ( ar_expression , ar_expression )
+divide_expression->div ( ar_expression , ar_expression )
+mod_expression->mod ( ar_expression , ar_expression )
+ar_expression->add_expression|subtract_expression|multiply_expression|divide_expression|mod_expression|term

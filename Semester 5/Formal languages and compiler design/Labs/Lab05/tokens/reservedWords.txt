@@ -1,0 +1,9 @@
+letInt
+letString
+letBool
+letDouble
+if
+else
+print
+read
+for

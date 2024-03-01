@@ -1,0 +1,13 @@
+
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(Çµí‘8Ù™ü¯¹1
+{
+java:S2142 "^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8ß™ü¯¹1
+X	java:S125*"<This block of commented-out lines of code should be removed.(¸Ž«×8¸Ü“°¹1
+{
+java:S21426"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8â™ü¯¹1
+G	java:S106;"+Replace this use of System.out by a logger.(¢ýÛŸ8ä™ü¯¹1
+{
+java:S2142E"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8ä™ü¯¹1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8å™ü¯¹1

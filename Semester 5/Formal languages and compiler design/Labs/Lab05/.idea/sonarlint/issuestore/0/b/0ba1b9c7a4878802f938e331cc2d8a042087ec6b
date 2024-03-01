@@ -1,0 +1,34 @@
+
+L	java:S106"+Replace this use of System.out by a logger.(¸‘ï€ÿÿÿÿÿ8öµ’€º1
+G	java:S106	"+Replace this use of System.out by a logger.(—ùš×8÷µ’€º1
+L	java:S106
+"+Replace this use of System.out by a logger.(”¡¿šøÿÿÿÿ8÷µ’€º1
+G	java:S106"+Replace this use of System.out by a logger.(›»ä»8øµ’€º1
+G	java:S106"+Replace this use of System.out by a logger.(¤—Ğÿ8øµ’€º1
+L	java:S106"+Replace this use of System.out by a logger.(½²Ûòùÿÿÿÿ8Ã‘”€º1
+L	java:S106"+Replace this use of System.out by a logger.(ïîÜÿüÿÿÿÿ8—Ã«º1
+L	java:S106"+Replace this use of System.out by a logger.(ïÚâÀşÿÿÿÿ8‡»“¼1
+n
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(¦P8Š»“¼1
+L	java:S106"+Replace this use of System.out by a logger.(å£Â¡üÿÿÿÿ8™Ã«º1
+G	java:S106"+Replace this use of System.out by a logger.(€ê®…8Ã«º1
+G	java:S106 "+Replace this use of System.out by a logger.(Á‡ş”8 Ã«º1
+G	java:S106!"+Replace this use of System.out by a logger.(ŸåŠŠ8µ»“¼1
+G	java:S106#"+Replace this use of System.out by a logger.(ºù„†8£Ã«º1
+G	java:S106$"+Replace this use of System.out by a logger.(œˆÔü8¸»“¼1
+L	java:S106&"+Replace this use of System.out by a logger.(Ñ¼¨Õùÿÿÿÿ8¤Ã«º1
+L	java:S106("+Replace this use of System.out by a logger.(ïïÛåşÿÿÿÿ8¦Ã«º1
+L	java:S106)"+Replace this use of System.out by a logger.(ëÈñÓúÿÿÿÿ8¼»“¼1
+L	java:S106+"+Replace this use of System.out by a logger.(ÊÙ•üÿÿÿÿ8©Ã«º1
+G	java:S106,"+Replace this use of System.out by a logger.(£ÒĞ¨8¿»“¼1
+G	java:S106."+Replace this use of System.out by a logger.(ãå’î8À»“¼1
+L	java:S1060"+Replace this use of System.out by a logger.(ÿ¥æ¦úÿÿÿÿ8«Ã«º1
+G	java:S1062"+Replace this use of System.out by a logger.(ÕÒÛş8¬Ã«º1
+G	java:S1066"+Replace this use of System.out by a logger.(º‡µ¨8ªÃ«º1
+F	java:S1069"+Replace this use of System.out by a logger.(ÙÚè(8Í»“¼1
+G	java:S106;"+Replace this use of System.out by a logger.(šĞ·É8¡÷Ä«º1
+L	java:S106>"+Replace this use of System.out by a logger.(î‡ó©ùÿÿÿÿ8­Ã«º1
+G	java:S106A"+Replace this use of System.out by a logger.(ùÄ•ï8®Ã«º1
+L	java:S106D"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8Ó»“¼1
+\
+java:S1128":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ8ãÅŸ—½1

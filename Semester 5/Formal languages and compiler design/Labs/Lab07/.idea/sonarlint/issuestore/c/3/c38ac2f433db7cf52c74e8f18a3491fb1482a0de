@@ -1,0 +1,5 @@
+
+[
+java:S2095&"EUse try-with-resources or close this "Scanner" in a "finally" clause.(Ðˆ„æ
+J
+java:S2864E"4Iterate over the "entrySet" instead of the "keySet".(á‘æÙ

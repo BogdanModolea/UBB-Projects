@@ -1,0 +1,19 @@
+program|decllist|declaration|identifierlist|stmtlist|stmt|simplstmt|assignstmt|expression|term|factor|iostmt|structstmt|ifstmt|forstmt|condition|relation|
+;|{|}|+|-|*|/|)|(|read|print|IDENTIFIER|if|else|for|letInt|letString|letBool|letDouble|<|<=|=|==|<>|>=|>|,
+program
+program::=decllist
+decllist::=declaration|declaration ; decllist
+declaration::=letInt identifierlist|letString identifierlist|letBool identifierlist|letDouble identifierlist
+stmtlist::=stmt|stmt ; stmtlist
+stmt::=simplstmt|structstmt
+simplstmt::=assignstmt|iostmt
+assignstmt::=IDENTIFIER = expression
+expression::=expression + term|expression - term|term
+term::=term * factor|term / factor|factor
+factor::=( expression )|IDENTIFIER|CONST
+iostmt::=read ( IDENTIFIER )|print ( IDENTIFIER )|print ( CONST )
+structstmt::=cmpdstmt|ifstmt
+ifstmt::=if ( condition ) { stmt }|if ( condition ) { stmt } else { stmt }
+forstmt::=for ( assignstmt ; condition ; expression ) { stmt }
+condition::=expression RELATION expression
+RELATION::=<|<=|=|<>|>=|>

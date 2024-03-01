@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SymTableTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-10-25T11:21:15" hostname="DESKTOP-TH52825" time="0.039">
+  <properties/>
+  <testcase name="testAdd()" classname="SymTableTest" time="0.031"/>
+  <testcase name="testSize()" classname="SymTableTest" time="0.002"/>
+  <testcase name="testContains()" classname="SymTableTest" time="0.001"/>
+  <testcase name="testRemove()" classname="SymTableTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

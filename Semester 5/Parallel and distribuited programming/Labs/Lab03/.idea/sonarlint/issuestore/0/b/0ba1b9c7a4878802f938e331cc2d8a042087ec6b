@@ -1,0 +1,48 @@
+
+m
+java:S1104"PMake rows a static final constant or non-public and provide accessors if needed.(™²÷¥8Ï¡ÅÏ»1
+o
+java:S1104"RMake colRow a static final constant or non-public and provide accessors if needed.(™²÷¥8Ñ¡ÅÏ»1
+p
+java:S1104"SMake columns a static final constant or non-public and provide accessors if needed.(™²÷¥8Ò¡ÅÏ»1
+v
+java:S1104"TMake approach a static final constant or non-public and provide accessors if needed.(ß±Şùÿÿÿÿ8§Øš¢»1
+u
+java:S1104"SMake problem a static final constant or non-public and provide accessors if needed.(óêëÛùÿÿÿÿ8§Øš¢»1
+u
+java:S1104"XMake threadNumber a static final constant or non-public and provide accessors if needed.(şÑÄ8§Øš¢»1
+o
+java:S1104"MMake A a static final constant or non-public and provide accessors if needed.(¶ßÄüşÿÿÿÿ8§Øš¢»1
+j
+java:S1104"MMake B a static final constant or non-public and provide accessors if needed.(Šæÿ¦8§Øš¢»1
+G
+java:S1444"*Make this "public static rows" field final(™²÷¥8Ö¡ÅÏ»1
+I
+java:S1444",Make this "public static colRow" field final(™²÷¥8×¡ÅÏ»1
+J
+java:S1444"-Make this "public static columns" field final(™²÷¥8×¡ÅÏ»1
+P
+java:S1444".Make this "public static approach" field final(ß±Şùÿÿÿÿ8§Øš¢»1
+O
+java:S1444"-Make this "public static problem" field final(óêëÛùÿÿÿÿ8§Øš¢»1
+O
+java:S1444"2Make this "public static threadNumber" field final(şÑÄ8§Øš¢»1
+I
+java:S1444"'Make this "public static A" field final(¶ßÄüşÿÿÿÿ8§Øš¢»1
+D
+java:S1444"'Make this "public static B" field final(Šæÿ¦8§Øš¢»1
+n
+java:S3008"LRename this field "A" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶ßÄüşÿÿÿÿ8¬Øš¢»1
+i
+java:S3008"LRename this field "B" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Šæÿ¦8¬Øš¢»1
+`
+java:S1659"CDeclare "colRow" and all following declarations on a separate line.(™²÷¥8İ¤ÅÏ»1
+c
+java:S2438I"AReplace "argument 1" of type Thread with an instance of Runnable.(ÏŒ¹úÿÿÿÿÿ8¼Øš¢»1
+c
+java:S2438K"AReplace "argument 1" of type Thread with an instance of Runnable.(¦üùİüÿÿÿÿ8¼Øš¢»1
+c
+java:S2438M"AReplace "argument 1" of type Thread with an instance of Runnable.(¸ÄºÑüÿÿÿÿ8½Øš¢»1
+G	java:S106W"+Replace this use of System.out by a logger.(ÊƒÙĞ8¾Øš¢»1
+L	java:S106_"+Replace this use of System.out by a logger.(’Ó¶øÿÿÿÿ8™ä›¢»1
+G	java:S106i"+Replace this use of System.out by a logger.(‹Ëó™8Ó¨Ÿ¢»1

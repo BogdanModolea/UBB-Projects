@@ -1,0 +1,18 @@
+// check if a number is prime
+
+letInt x;
+read(x);
+letInt i;
+letInt isPrime = 1;
+for(i = 2; i * i < x; i++) {
+	if(x % i == 0) {
+		isPrime = 0;
+	}
+}
+
+if(isPrime == 1) {
+	print("The number is prime");
+}
+else {
+	print("The number is not prime");
+}

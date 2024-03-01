@@ -1,0 +1,27 @@
+
+t	java:S127t"XRefactor the code in order to not assign to this loop counter from within the loop body.(ÌµĞ·8ÀŠ¦×¸1
+g
+java:S2095F"EUse try-with-resources or close this "Scanner" in a "finally" clause.(šè™óùÿÿÿÿ8»›×¸1
+g
+java:S2095!"EUse try-with-resources or close this "Scanner" in a "finally" clause.(•ÎÃÆúÿÿÿÿ8»›×¸1
+r	java:S116	"VRename this field "CONST_REGEX" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­´‹©8¼›×¸1
+|	java:S116
+"[Rename this field "IDENTIFIER_REGEX" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡šõÿÿÿÿÿ8¼›×¸1
+>
+java:S1170	"!Make this final field static too.(­´‹©8¼›×¸1
+C
+java:S1170
+"!Make this final field static too.(¡šõÿÿÿÿÿ8¼›×¸1
+o
+java:S3776T"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Ùë÷‘8Ó›×¸1
+q
+java:S5850	"TGroup parts of the regex together to make the intended operator precedence explicit.(­´‹©8á›×¸1
+Y
+java:S6353	"<Use concise character class syntax '\\d' instead of '[0-9]'.(­´‹©8â›×¸1
+Y
+java:S6353	"<Use concise character class syntax '\\d' instead of '[0-9]'.(­´‹©8â›×¸1
+Y
+java:S6353	"<Use concise character class syntax '\\d' instead of '[0-9]'.(­´‹©8â›×¸1
+M	java:S106¢"+Replace this use of System.out by a logger.(ÚÁéıÿÿÿÿ8å›×¸1
+q
+java:S5843	"TSimplify this regular expression to reduce its complexity from 22 to the 20 allowed.(­´‹©8ë›×¸1

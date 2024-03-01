@@ -1,0 +1,99 @@
+0: SHIFT {compound_statement=1, {=2, program=3}
+1: REDUCE 0
+2: SHIFT {compound_statement=4, read=5, letInt=6, simple_statement=7, simple_type=8, assignment_statement=9, while=10, primitive_declaration=11, declaration=12, letString=13, read_statement=14, statement=15, if_statement=16, while_statement=17, IDENTIFIER=18, {=2, write=19, if=20, structure_statement=21, write_statement=22, statement_list=23}
+3: ACCEPT
+4: REDUCE 10
+5: SHIFT {(=24}
+6: REDUCE 15
+7: SHIFT {;=25}
+8: SHIFT {IDENTIFIER=26}
+9: REDUCE 7
+10: SHIFT {(=27}
+11: REDUCE 13
+12: REDUCE 8
+13: REDUCE 16
+14: REDUCE 6
+15: REDUCE 1
+16: REDUCE 11
+17: REDUCE 12
+18: SHIFT {==28}
+19: SHIFT {(=29}
+20: SHIFT {(=30}
+21: REDUCE 5
+22: REDUCE 9
+23: SHIFT {compound_statement=4, read=5, letInt=6, simple_statement=7, simple_type=8, assignment_statement=9, while=10, primitive_declaration=11, declaration=12, letString=13, read_statement=14, statement=31, if_statement=16, while_statement=17, IDENTIFIER=18, {=2, write=19, }=32, if=20, structure_statement=21, write_statement=22}
+24: SHIFT {IDENTIFIER=33}
+25: REDUCE 4
+26: REDUCE 14
+27: SHIFT {add=34, add_expression=35, sub=36, mod=37, mul=38, mod_expression=39, multiply_expression=40, div=41, condition=42, CONST=43, divide_expression=44, term=45, subtract_expression=46, IDENTIFIER=47, ar_expression=48}
+28: SHIFT {add=34, add_expression=35, sub=36, mod=37, mul=38, mod_expression=39, multiply_expression=40, div=41, CONST=43, divide_expression=44, term=45, subtract_expression=46, IDENTIFIER=47, ar_expression=49}
+29: SHIFT {CONST=50, IDENTIFIER=51}
+30: SHIFT {add=34, add_expression=35, sub=36, mod=37, mul=38, mod_expression=39, multiply_expression=40, div=41, condition=52, CONST=43, divide_expression=44, term=45, subtract_expression=46, IDENTIFIER=47, ar_expression=48}
+31: REDUCE 2
+32: REDUCE 3
+33: SHIFT {)=53}
+34: SHIFT {(=54}
+35: REDUCE 37
+36: SHIFT {(=55}
+37: SHIFT {(=56}
+38: SHIFT {(=57}
+39: REDUCE 39
+40: REDUCE 41
+41: SHIFT {(=58}
+42: SHIFT {)=59}
+43: REDUCE 23
+44: REDUCE 38
+45: REDUCE 42
+46: REDUCE 40
+47: REDUCE 24
+48: SHIFT {===60, <==61, =>=62, <=63, !==64, >=65, relation=66}
+49: REDUCE 17
+50: SHIFT {)=67}
+51: SHIFT {)=68}
+52: SHIFT {)=69}
+53: REDUCE 20
+54: SHIFT {add=34, add_expression=35, sub=36, mod=37, mul=38, mod_expression=39, multiply_expression=40, div=41, CONST=43, divide_expression=44, term=45, subtract_expression=46, IDENTIFIER=47, ar_expression=70}
+55: SHIFT {add=34, add_expression=35, sub=36, mod=37, mul=38, mod_expression=39, multiply_expression=40, div=41, CONST=43, divide_expression=44, term=45, subtract_expression=46, IDENTIFIER=47, ar_expression=71}
+56: SHIFT {add=34, add_expression=35, sub=36, mod=37, mul=38, mod_expression=39, multiply_expression=40, div=41, CONST=43, divide_expression=44, term=45, subtract_expression=46, IDENTIFIER=47, ar_expression=72}
+57: SHIFT {add=34, add_expression=35, sub=36, mod=37, mul=38, mod_expression=39, multiply_expression=40, div=41, CONST=43, divide_expression=44, term=45, subtract_expression=46, IDENTIFIER=47, ar_expression=73}
+58: SHIFT {add=34, add_expression=35, sub=36, mod=37, mul=38, mod_expression=39, multiply_expression=40, div=41, CONST=43, divide_expression=44, term=45, subtract_expression=46, IDENTIFIER=47, ar_expression=74}
+59: SHIFT {compound_statement=75, {=2}
+60: REDUCE 30
+61: REDUCE 25
+62: REDUCE 26
+63: REDUCE 27
+64: REDUCE 28
+65: REDUCE 29
+66: SHIFT {add=34, add_expression=35, sub=36, mod=37, mul=38, mod_expression=39, multiply_expression=40, div=41, CONST=43, divide_expression=44, term=45, subtract_expression=46, IDENTIFIER=47, ar_expression=76}
+67: REDUCE 21
+68: REDUCE 22
+69: SHIFT {{=77}
+70: SHIFT {,=78}
+71: SHIFT {,=79}
+72: SHIFT {,=80}
+73: SHIFT {,=81}
+74: SHIFT {,=82}
+75: REDUCE 19
+76: REDUCE 31
+77: SHIFT {compound_statement=4, read=5, letInt=6, simple_statement=7, simple_type=8, assignment_statement=9, while=10, primitive_declaration=11, declaration=12, letString=13, read_statement=14, statement=83, if_statement=16, while_statement=17, IDENTIFIER=18, {=2, write=19, if=20, structure_statement=21, write_statement=22}
+78: SHIFT {add=34, add_expression=35, sub=36, mod=37, mul=38, mod_expression=39, multiply_expression=40, div=41, CONST=43, divide_expression=44, term=45, subtract_expression=46, IDENTIFIER=47, ar_expression=84}
+79: SHIFT {add=34, add_expression=35, sub=36, mod=37, mul=38, mod_expression=39, multiply_expression=40, div=41, CONST=43, divide_expression=44, term=45, subtract_expression=46, IDENTIFIER=47, ar_expression=85}
+80: SHIFT {add=34, add_expression=35, sub=36, mod=37, mul=38, mod_expression=39, multiply_expression=40, div=41, CONST=43, divide_expression=44, term=45, subtract_expression=46, IDENTIFIER=47, ar_expression=86}
+81: SHIFT {add=34, add_expression=35, sub=36, mod=37, mul=38, mod_expression=39, multiply_expression=40, div=41, CONST=43, divide_expression=44, term=45, subtract_expression=46, IDENTIFIER=47, ar_expression=87}
+82: SHIFT {add=34, add_expression=35, sub=36, mod=37, mul=38, mod_expression=39, multiply_expression=40, div=41, CONST=43, divide_expression=44, term=45, subtract_expression=46, IDENTIFIER=47, ar_expression=88}
+83: SHIFT {}=89}
+84: SHIFT {)=90}
+85: SHIFT {)=91}
+86: SHIFT {)=92}
+87: SHIFT {)=93}
+88: SHIFT {)=94}
+89: SHIFT {else=95}
+90: REDUCE 32
+91: REDUCE 33
+92: REDUCE 36
+93: REDUCE 34
+94: REDUCE 35
+95: SHIFT {{=96}
+96: SHIFT {compound_statement=4, read=5, letInt=6, simple_statement=7, simple_type=8, assignment_statement=9, while=10, primitive_declaration=11, declaration=12, letString=13, read_statement=14, statement=97, if_statement=16, while_statement=17, IDENTIFIER=18, {=2, write=19, if=20, structure_statement=21, write_statement=22}
+97: SHIFT {}=98}
+98: REDUCE 18

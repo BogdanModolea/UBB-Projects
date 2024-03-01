@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestLR" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-12-06T12:31:06" hostname="DESKTOP-TH52825" time="0.043">
+  <properties/>
+  <testcase name="testGoTo()" classname="TestLR" time="0.029"/>
+  <testcase name="testClosure()" classname="TestLR" time="0.007"/>
+  <testcase name="testCanonicalCollection()" classname="TestLR" time="0.003"/>
+  <system-out><![CDATA[The result is here:
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

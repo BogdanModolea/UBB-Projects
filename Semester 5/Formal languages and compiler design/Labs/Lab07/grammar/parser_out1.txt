@@ -1,0 +1,9 @@
+0: SHIFT {a=1, b=2, c=3, S=4}
+1: SHIFT {a=1, b=2, c=3, S=5}
+2: SHIFT {a=1, b=2, c=3, S=6}
+3: REDUCE 2
+4: ACCEPT
+5: SHIFT {a=7}
+6: SHIFT {b=8}
+7: REDUCE 0
+8: REDUCE 1

@@ -1,0 +1,7 @@
+0 - [x, 2]
+2 - ["The number is not prime"]
+3 - ["The number is prime"]
+5 - [i]
+8 - [0]
+9 - [isPrime, 1]
+

@@ -1,0 +1,7 @@
+
+‚
+java:S1319	"eThe type of "sales" should be an interface such as "List" rather than the implementation "ArrayList".(èÉ¼Å8ë„Â‹¶1
+‡
+java:S1319"eThe type of "sales" should be an interface such as "List" rather than the implementation "ArrayList".(ÞÈÕ´ýÿÿÿÿ8í„Â‹¶1
+L	java:S106"+Replace this use of System.out by a logger.(ñšïÂøÿÿÿÿ8‚…Â‹¶1
+G	java:S106"+Replace this use of System.out by a logger.(Ùš‡ù8ƒ…Â‹¶1
