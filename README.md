@@ -95,4 +95,62 @@ Almost all my University Laboratories and Seminaries work should be there.
       </li>
     </ul>
   </li>
+  <li>🗃️ Semester 4  
+    <ul>
+      <li>
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%204/Artificial%20Intelligence">
+          🤖 Artificial Intelligence
+        </a>
+      </li>
+      <li>
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%204/Database%20Management%20Systems">
+          📊 Database Management Systems
+        </a>
+      </li>
+      <li>
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%204/Software%20Engineering">
+          🔧 Software Engineering
+        </a>
+      </li>
+      <li>
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%204/Systems%20for%20Design%20and%20Implementation">
+           🌱 Systems for Design and Implementation
+        </a>
+      </li>
+      <li>
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%204/Web%20Programming">
+           📶 Web Programming
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li>🗃️ Semester 5  
+    <ul>
+      <li>
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%205/Formal%20languages%20and%20compiler%20design">
+          👾 Formal languages and compiler design
+        </a>
+      </li>
+      <li>
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%205/Mobile%20application%20programming">
+          📱 Mobile application programming
+        </a>
+      </li>
+      <li>
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%205/Parallel%20and%20distribuited%20programming">
+          🔀 Parallel and distribuited programming
+        </a>
+      </li>
+      <li>
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%205/Principles%20of%20performance%20oriented%20coding">
+           ♨️ Principles of performance oriented coding
+        </a>
+      </li>
+      <li>
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%205/Virtual%20reality">
+           👓 Virtual reality
+        </a>
+      </li>
+    </ul>
+  </li>
 </ul>
