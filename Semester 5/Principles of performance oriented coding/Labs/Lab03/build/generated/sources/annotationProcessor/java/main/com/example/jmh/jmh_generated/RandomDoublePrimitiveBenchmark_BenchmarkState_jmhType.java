@@ -1,0 +1,4 @@
+package com.example.jmh.jmh_generated;
+public class RandomDoublePrimitiveBenchmark_BenchmarkState_jmhType extends RandomDoublePrimitiveBenchmark_BenchmarkState_jmhType_B3 {
+}
+

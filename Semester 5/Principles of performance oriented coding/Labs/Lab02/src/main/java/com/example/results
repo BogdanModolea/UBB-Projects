@@ -1,0 +1,29 @@
+Benchmark                              Mode  Cnt       Score      Error   Units
+ArrayListBenchmark.add                thrpt   10   19044.016 �   543589.397  ops/ms
+ArrayListBenchmark.contains           thrpt   20  570085.022 � 7220.177  ops/ms
+ArrayListBenchmark.remove             thrpt   20   85112.264 � 1118.434  ops/ms
+ConcurrentHashMapBenchmark.add        thrpt   20    5197.416 �   56.813  ops/ms
+ConcurrentHashMapBenchmark.contains   thrpt   20   12016.310 �  165.746  ops/ms
+ConcurrentHashMapBenchmark.remove     thrpt   20    8547.923 �  609.480  ops/ms
+EclipseCollectionBenchmark.add        thrpt   20    6702.814 �  253.432  ops/ms
+EclipseCollectionBenchmark.contains   thrpt   20    7269.611 �  234.471  ops/ms
+EclipseCollectionBenchmark.remove     thrpt   20    7944.891 �  222.687  ops/ms
+FastUtilCollectionBenchmark.contains  thrpt   20   76976.882 �  589.381  ops/ms
+FastUtilCollectionBenchmark.remove    thrpt   20  113319.738 �  538.225  ops/ms
+HashSetBenchmark.add                  thrpt   20    6544.748 �   98.744  ops/ms
+HashSetBenchmark.contains             thrpt   20    7848.441 �   63.536  ops/ms
+HashSetBenchmark.remove               thrpt   20    8020.503 �   76.833  ops/ms
+KolobokeCollectionBenchmark.add       thrpt   20    8467.588 �  168.385  ops/ms
+KolobokeCollectionBenchmark.contains  thrpt   20    8510.543 �  190.499  ops/ms
+KolobokeCollectionBenchmark.remove    thrpt   20    8523.108 �  394.002  ops/ms
+TreeSetBenchmark.add                  thrpt   20   29520.270 �  249.518  ops/ms
+TreeSetBenchmark.contains             thrpt   20  390264.550 � 8462.907  ops/ms
+TreeSetBenchmark.remove               thrpt   20   52721.097 �  558.941  ops/ms
+Trove4jCollectionBenchmark.add        thrpt   20    7414.881 �  193.773  ops/ms
+Trove4jCollectionBenchmark.contains   thrpt   20    7444.802 �  244.181  ops/ms
+Trove4jCollectionBenchmark.remove     thrpt   20    7807.607 �  231.318  ops/ms
+
+
+Best add:           TreeSet
+Best contains:      ArrayList
+Best remove:        FastUtil

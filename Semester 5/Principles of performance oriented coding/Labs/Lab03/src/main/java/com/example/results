@@ -1,0 +1,25 @@
+RandomDoublePrimitiveBenchmark.BenchmarkState.add            thrpt   5  3.071 � 0.006  ops/s
+RandomDoublePrimitiveBenchmark.BenchmarkState.avg            thrpt   5  3.054 � 0.005  ops/s
+RandomDoublePrimitiveBenchmark.BenchmarkState.top10Percent   thrpt   5  0.105 � 0.001  ops/s
+
+AscSortDoublePrimitiveBenchmark.BenchmarkState.add           thrpt   5  3.056 � 0.008  ops/s
+AscSortDoublePrimitiveBenchmark.BenchmarkState.avg           thrpt   5  3.040 � 0.007  ops/s
+AscSortDoublePrimitiveBenchmark.BenchmarkState.top10Percent  thrpt   5  0.104 � 0.001  ops/s
+
+DescSortDoublePrimitiveBenchmark.BenchmarkState.add           thrpt   5  2.932 � 0.037  ops/s
+DescSortDoublePrimitiveBenchmark.BenchmarkState.avg           thrpt   5  2.795 � 0.207  ops/s
+DescSortDoublePrimitiveBenchmark.BenchmarkState.top10Percent  thrpt   5  0.098 � 0.007  ops/s
+
+
+
+RandomDoubleObjectBenchmark.BenchmarkState.add            thrpt   5  2.220 � 0.006  ops/s
+RandomDoubleObjectBenchmark.BenchmarkState.avg            thrpt   5  2.373 � 0.005  ops/s
+RandomDoubleObjectBenchmark.BenchmarkState.top10Percent   thrpt   5  0.104 � 0.001  ops/s
+
+AscSortDoubleObjectBenchmark.BenchmarkState.add           thrpt   5  2.413 � 0.006  ops/s
+AscSortDoubleObjectBenchmark.BenchmarkState.avg           thrpt   5  2.345 � 0.005  ops/s
+AscSortDoubleObjectBenchmark.BenchmarkState.top10Percent  thrpt   5  0.139 � 0.001  ops/s
+
+DescSortDoubleObjectBenchmark.BenchmarkState.add           thrpt   5  2.597 � 0.005  ops/s
+DescSortDoubleObjectBenchmark.BenchmarkState.avg           thrpt   5  2.314 � 0.005  ops/s
+DescSortDoubleObjectBenchmark.BenchmarkState.top10Percent  thrpt   5  0.168 � 0.001  ops/s

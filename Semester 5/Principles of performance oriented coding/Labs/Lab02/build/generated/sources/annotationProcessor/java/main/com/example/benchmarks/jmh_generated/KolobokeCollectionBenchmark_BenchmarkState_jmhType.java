@@ -1,0 +1,4 @@
+package com.example.benchmarks.jmh_generated;
+public class KolobokeCollectionBenchmark_BenchmarkState_jmhType extends KolobokeCollectionBenchmark_BenchmarkState_jmhType_B3 {
+}
+

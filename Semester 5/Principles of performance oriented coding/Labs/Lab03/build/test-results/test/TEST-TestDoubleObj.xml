@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestDoubleObj" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-11-23T15:16:34" hostname="DESKTOP-TH52825" time="0.063">
+  <properties/>
+  <testcase name="testAdd()" classname="TestDoubleObj" time="0.047"/>
+  <testcase name="testAvg()" classname="TestDoubleObj" time="0.008"/>
+  <testcase name="test10Percent()" classname="TestDoubleObj" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

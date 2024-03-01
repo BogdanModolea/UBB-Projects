@@ -1,0 +1,4 @@
+package com.example.benchmarks.jmh_generated;
+public class FastUtilCollectionBenchmark_BenchmarkState_jmhType extends FastUtilCollectionBenchmark_BenchmarkState_jmhType_B3 {
+}
+

@@ -1,0 +1,4 @@
+package com.example.benchmarks.jmh_generated;
+public class ConcurrentHashMapBenchmark_BenchmarkState_jmhType extends ConcurrentHashMapBenchmark_BenchmarkState_jmhType_B3 {
+}
+

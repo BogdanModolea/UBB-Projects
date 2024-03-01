@@ -1,0 +1,4 @@
+package com.example.jmh.jmh_generated;
+public class RandomDoubleObjectBenchmark_BenchmarkState_jmhType extends RandomDoubleObjectBenchmark_BenchmarkState_jmhType_B3 {
+}
+

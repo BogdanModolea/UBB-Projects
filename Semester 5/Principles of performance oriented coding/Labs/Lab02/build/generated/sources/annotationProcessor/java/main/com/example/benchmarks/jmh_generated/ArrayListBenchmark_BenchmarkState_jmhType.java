@@ -1,0 +1,4 @@
+package com.example.benchmarks.jmh_generated;
+public class ArrayListBenchmark_BenchmarkState_jmhType extends ArrayListBenchmark_BenchmarkState_jmhType_B3 {
+}
+

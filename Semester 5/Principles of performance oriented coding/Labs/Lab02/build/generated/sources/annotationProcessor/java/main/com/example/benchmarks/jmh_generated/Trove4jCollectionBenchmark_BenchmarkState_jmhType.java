@@ -1,0 +1,4 @@
+package com.example.benchmarks.jmh_generated;
+public class Trove4jCollectionBenchmark_BenchmarkState_jmhType extends Trove4jCollectionBenchmark_BenchmarkState_jmhType_B3 {
+}
+

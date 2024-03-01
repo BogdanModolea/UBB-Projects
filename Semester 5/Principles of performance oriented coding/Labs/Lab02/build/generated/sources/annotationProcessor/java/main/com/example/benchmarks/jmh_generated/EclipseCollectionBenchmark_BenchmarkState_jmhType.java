@@ -1,0 +1,4 @@
+package com.example.benchmarks.jmh_generated;
+public class EclipseCollectionBenchmark_BenchmarkState_jmhType extends EclipseCollectionBenchmark_BenchmarkState_jmhType_B3 {
+}
+

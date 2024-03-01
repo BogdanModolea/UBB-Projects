@@ -1,0 +1,4 @@
+package com.example.jmh.jmh_generated;
+public class AscSortDoubleObjectBenchmark_BenchmarkState_jmhType extends AscSortDoubleObjectBenchmark_BenchmarkState_jmhType_B3 {
+}
+

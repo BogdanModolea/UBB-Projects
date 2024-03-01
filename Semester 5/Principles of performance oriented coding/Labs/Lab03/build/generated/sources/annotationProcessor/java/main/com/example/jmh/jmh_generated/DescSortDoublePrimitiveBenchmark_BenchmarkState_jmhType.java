@@ -1,0 +1,4 @@
+package com.example.jmh.jmh_generated;
+public class DescSortDoublePrimitiveBenchmark_BenchmarkState_jmhType extends DescSortDoublePrimitiveBenchmark_BenchmarkState_jmhType_B3 {
+}
+
