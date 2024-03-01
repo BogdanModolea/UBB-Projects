@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".UpdateAccountActivity">
+
+    <TextView
+        android:id="@+id/updateAccountHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="Edit Account"
+        android:textColor="@color/green"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/updateSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_done_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/updateAccountHeading"
+        android:layout_marginEnd="6dp" />
+
+
+    <TextView
+        android:id="@+id/updateIbanHeading"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="@string/enter_new_iban"
+        android:textSize="20sp"
+        android:layout_below="@id/updateAccountHeading"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins" />
+
+    <EditText
+        android:id="@+id/updateIbanEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/enter_new_iban"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/updateIbanHeading"
+        android:background="@drawable/green_border"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins" />
+
+    <TextView
+        android:id="@+id/updateSoldHeading"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="@string/enter_new_sold"
+        android:textSize="20sp"
+        android:layout_below="@id/updateIbanEditText"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins" />
+
+    <EditText
+        android:id="@+id/updateSoldEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/enter_new_sold"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/updateSoldHeading"
+        android:background="@drawable/green_border"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins" />
+
+    <TextView
+        android:id="@+id/updateCurrencyHeading"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="@string/enter_new_currency"
+        android:textSize="20sp"
+        android:layout_below="@id/updateSoldEditText"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins" />
+
+    <EditText
+        android:id="@+id/updateCurrencyEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/enter_new_currency"
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/updateCurrencyHeading"
+        android:background="@drawable/green_border"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins" />
+
+    <TextView
+        android:id="@+id/updateBankHeading"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="@string/enter_new_bank"
+        android:textSize="20sp"
+        android:layout_below="@id/updateCurrencyEditText"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins" />
+
+    <EditText
+        android:id="@+id/updateBankEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/enter_new_bank"
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/updateBankHeading"
+        android:background="@drawable/green_border"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins" />
+
+    <TextView
+        android:id="@+id/updateAccountnameHeading"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="@string/enter_new_account_name"
+        android:textSize="20sp"
+        android:layout_below="@id/updateBankEditText"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins" />
+
+    <EditText
+        android:id="@+id/updateAccountnameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/enter_new_account_name"
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/updateAccountnameHeading"
+        android:background="@drawable/green_border"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins" />
+
+
+
+
+</RelativeLayout>

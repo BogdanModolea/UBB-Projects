@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Lab02</string>
+    <string name="enter_iban">Enter IBAN</string>
+    <string name="enter_new_iban">Enter New IBAN</string>
+    <string name="enter_sold">Enter Sold</string>
+    <string name="enter_new_sold">Enter New Sold</string>
+    <string name="enter_currency">Enter Currency</string>
+    <string name="enter_new_currency">Enter New Currency</string>
+    <string name="enter_bank">Enter Bank</string>
+    <string name="enter_new_bank">Enter New Bank</string>
+    <string name="enter_account_name">Enter Account Name</string>
+    <string name="enter_new_account_name">Enter New Account Name</string>
+</resources>

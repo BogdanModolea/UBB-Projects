@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddAccountActivity">
+
+    <TextView
+        android:id="@+id/addAccountHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="Add Account"
+        android:textColor="@color/green"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_done_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/addAccountHeading"
+        android:layout_marginEnd="6dp" />
+
+    <TextView
+        android:id="@+id/ibanHeading"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="@string/enter_iban"
+        android:textSize="20sp"
+        android:layout_marginTop="80dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins" />
+
+    <EditText
+        android:id="@+id/ibanEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/enter_iban"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/ibanHeading"
+        android:background="@drawable/green_border"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins" />
+
+    <TextView
+        android:id="@+id/soldHeading"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="@string/enter_sold"
+        android:textSize="20sp"
+        android:layout_below="@id/ibanEditText"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins" />
+
+    <EditText
+        android:id="@+id/soldEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/enter_sold"
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/soldHeading"
+        android:background="@drawable/green_border"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins" />
+
+    <TextView
+        android:id="@+id/currencyHeading"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="@string/enter_currency"
+        android:textSize="20sp"
+        android:layout_below="@id/soldEditText"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins" />
+
+    <EditText
+        android:id="@+id/currencyEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/enter_currency"
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/currencyHeading"
+        android:background="@drawable/green_border"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins" />
+
+    <TextView
+        android:id="@+id/bankHeading"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="@string/enter_bank"
+        android:textSize="20sp"
+        android:layout_below="@id/currencyEditText"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins" />
+
+    <EditText
+        android:id="@+id/bankEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/enter_bank"
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/bankHeading"
+        android:background="@drawable/green_border"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins" />
+
+    <TextView
+        android:id="@+id/accountnameHeading"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="@string/enter_account_name"
+        android:textSize="20sp"
+        android:layout_below="@id/bankEditText"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins" />
+
+    <EditText
+        android:id="@+id/accountnameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/enter_account_name"
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/accountnameHeading"
+        android:background="@drawable/green_border"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins" />
+
+
+
+    
+</RelativeLayout>

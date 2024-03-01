@@ -1,0 +1,41 @@
+PZY - Bank account manager
+
+
+1. A short description
+
+This mobile app is used for credit transfers between accounts. This application lets you add and manage multiple accounts from various banks, making it easy to keep track of your money. 
+A payment is made by selecting the credit account, the debit account, the amount and the currency which is going to be converted accordingly. PZY offers a convenient solution for transferring credits between accounts. It will provide real-time updates on your transaction.
+
+
+2. Domain details
+
+-Account:
+	IBAN: 		the unique identifier of an accont
+	Sold: 		the current amount of credits on that account
+	Currency: 	the currency that is used by the account
+	Bank: 		the name of the bank where the account is opened
+	Account Name: 	your personalized name for the account
+
+
+3. CRUD
+	create: on the home page there is going to be a button that sends you to a form where you can enter the details abount the account
+	read: 	on the home page there are going to be shown all the accounts that are linked with the application
+	update: if the user presses on one account, then they will be redirected to a form where they can update the page (or just delete the account)
+	delete: if the user presses on one account, then they will be redirected to a page and at the bottom of the page will be a delete button
+
+
+4. Persistence details
+	The create, update and delete operation will have an impact over the database, because they are going to modify entities across the table, either on local database or on the server.
+		- create operation will add a new account into the database
+		- delete operation will erase accounts from database, freeing up a new slot
+		- update operation will modify an existing account in the database
+
+
+5. Details on what is happening when the device is offline.
+
+	Changes will persist only locally in the database. 
+	When the application is used offline, all the operations performed will store the information locally:
+		- the accounts created will be stored in the local database
+		- the read operation will be used only on the local database
+		- the update operation will modify the locally saved accounts
+		- the delete operation will delete the locally saved accounts

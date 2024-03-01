@@ -1,0 +1,205 @@
+2024-01-15 08:10:29,335 [INFO] com.example.bankaccounts.BankAccountsApplication [main] Starting BankAccountsApplication using Java 20 with PID 30852 (D:\.MA\Lab05\bank_accounts_backend\BankAccounts\build\classes\java\main started by bogda in D:\.MA\Lab05\bank_accounts_backend\BankAccounts)
+2024-01-15 08:10:29,342 [DEBUG] com.example.bankaccounts.BankAccountsApplication [main] Running with Spring Boot v3.2.1, Spring v6.1.2
+2024-01-15 08:10:29,343 [INFO] com.example.bankaccounts.BankAccountsApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-01-15 08:10:30,183 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-15 08:10:30,253 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interface.
+2024-01-15 08:10:30,963 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-01-15 08:10:30,982 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2024-01-15 08:10:30,983 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-15 08:10:31,073 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2024-01-15 08:10:31,074 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1662 ms
+2024-01-15 08:10:31,331 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-15 08:10:31,517 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-15 08:10:31,586 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-01-15 08:10:32,106 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-15 08:10:32,156 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-01-15 08:10:32,403 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a9a8ec3
+2024-01-15 08:10:32,405 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-01-15 08:10:32,468 [WARN] org.hibernate.dialect.Dialect [main] HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-15 08:10:33,277 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-15 08:10:33,350 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-15 08:10:33,713 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-15 08:10:33,768 [INFO] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
+2024-01-15 08:10:34,337 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2024-01-15 08:10:34,340 [INFO] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler [main] Starting...
+2024-01-15 08:10:34,340 [INFO] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler [main] BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@36ae17ef]]
+2024-01-15 08:10:34,341 [INFO] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler [main] Started.
+2024-01-15 08:10:34,347 [INFO] com.example.bankaccounts.BankAccountsApplication [main] Started BankAccountsApplication in 5.42 seconds (process running for 6.14)
+2024-01-15 08:11:34,319 [INFO] org.springframework.web.socket.config.WebSocketMessageBrokerStats [MessageBroker-1] WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2024-01-15 08:11:40,753 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-15 08:11:40,754 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-01-15 08:11:40,756 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2024-01-15 08:11:40,810 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-1] Getting all accounts
+2024-01-15 08:18:17,216 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-4] Getting all accounts
+2024-01-15 08:19:27,815 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-7] Getting all accounts
+2024-01-15 08:21:05,418 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-9] Getting all accounts
+2024-01-15 08:21:36,224 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-1] Getting all accounts
+2024-01-15 08:21:36,630 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-5] Getting all accounts
+2024-01-15 08:21:36,803 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-3] Getting all accounts
+2024-01-15 08:22:49,745 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-8] Getting all accounts
+2024-01-15 08:22:49,748 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-1] Getting all accounts
+2024-01-15 08:22:49,749 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-5] Getting all accounts
+2024-01-15 08:22:49,749 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-3] Getting all accounts
+2024-01-15 08:22:49,749 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-2] Getting all accounts
+2024-01-15 08:22:49,749 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-9] Getting all accounts
+2024-01-15 08:22:49,749 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-10] Getting all accounts
+2024-01-15 08:22:49,749 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-4] Getting all accounts
+2024-01-15 08:22:49,751 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-7] Getting all accounts
+2024-01-15 08:22:49,753 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-12] Getting all accounts
+2024-01-15 08:22:49,751 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-6] Getting all accounts
+2024-01-15 08:22:49,753 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-11] Getting all accounts
+2024-01-15 08:22:49,760 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-13] Getting all accounts
+2024-01-15 08:22:49,762 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-8] Getting all accounts
+2024-01-15 08:22:50,047 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-3] Getting all accounts
+2024-01-15 08:22:50,158 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-7] Updating account AccountDTO(id=118, iban=2, sold=2, currency=2, bank=2, name=2)
+2024-01-15 08:22:50,158 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-2] Updating account AccountDTO(id=120, iban=6, sold=6, currency=6, bank=6, name=6)
+2024-01-15 08:22:50,158 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-10] Updating account AccountDTO(id=112, iban=3, sold=3, currency=3, bank=3, name=3)
+2024-01-15 08:22:50,158 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-5] Updating account AccountDTO(id=113, iban=4, sold=4, currency=4, bank=4, name=4)
+2024-01-15 08:22:50,158 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-4] Updating account AccountDTO(id=103, iban=1, sold=1, currency=1, bank=1, name=1)
+2024-01-15 08:22:50,158 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-12] Updating account AccountDTO(id=119, iban=5, sold=5, currency=5, bank=5, name=5)
+2024-01-15 08:23:08,217 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-12] Getting all accounts
+2024-01-15 08:23:08,224 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-4] Getting all accounts
+2024-01-15 08:23:08,224 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-7] Getting all accounts
+2024-01-15 08:23:08,227 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-2] Getting all accounts
+2024-01-15 08:23:08,227 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-10] Getting all accounts
+2024-01-15 08:23:08,765 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-13] Getting all accounts
+2024-01-15 08:23:08,765 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-11] Getting all accounts
+2024-01-15 08:23:08,765 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-1] Getting all accounts
+2024-01-15 08:23:08,765 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-12] Getting all accounts
+2024-01-15 08:23:08,765 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-8] Getting all accounts
+2024-01-15 08:23:08,765 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-9] Getting all accounts
+2024-01-15 08:23:08,765 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-3] Getting all accounts
+2024-01-15 08:23:08,765 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-5] Getting all accounts
+2024-01-15 08:23:08,765 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-6] Getting all accounts
+2024-01-15 08:23:09,412 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-7] Updating account AccountDTO(id=118, iban=2, sold=2, currency=2, bank=2, name=2)
+2024-01-15 08:23:09,412 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-4] Updating account AccountDTO(id=113, iban=4, sold=4, currency=4, bank=4, name=4)
+2024-01-15 08:23:09,413 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-2] Updating account AccountDTO(id=103, iban=1, sold=1, currency=1, bank=1, name=1)
+2024-01-15 08:23:09,413 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-10] Updating account AccountDTO(id=120, iban=6, sold=6, currency=6, bank=6, name=6)
+2024-01-15 08:23:09,413 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-3] Updating account AccountDTO(id=119, iban=5, sold=5, currency=5, bank=5, name=5)
+2024-01-15 08:23:09,413 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-13] Updating account AccountDTO(id=112, iban=3, sold=3, currency=3, bank=3, name=3)
+2024-01-15 08:23:09,670 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-11] Getting all accounts
+2024-01-15 08:23:15,848 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-12] Updating account AccountDTO(id=120, iban=6, sold=6, currency=6, bank=6, name=6)
+2024-01-15 08:23:19,138 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-13] Updating account AccountDTO(id=120, iban=6, sold=6, currency=61, bank=6, name=6)
+2024-01-15 08:23:28,013 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-2] Updating account AccountDTO(id=120, iban=6, sold=6, currency=6, bank=6, name=6)
+2024-01-15 08:24:45,180 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-4] Updating account AccountDTO(id=103, iban=11, sold=1, currency=1, bank=1, name=1)
+2024-01-15 08:24:51,141 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-7] Updating account AccountDTO(id=103, iban=11, sold=1, currency=1, bank=1, name=1)
+2024-01-15 08:25:05,260 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-6] Updating account AccountDTO(id=103, iban=1, sold=1, currency=1, bank=1, name=1)
+2024-01-15 08:29:17,146 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-13] Getting all accounts
+2024-01-15 08:29:17,403 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-3] Getting all accounts
+2024-01-15 08:33:38,272 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-11] Added new account AccountDTO(id=null, iban=7, sold=7, currency=7, bank=7, name=7)
+2024-01-15 08:38:46,227 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-13] Getting all accounts
+2024-01-15 08:38:46,228 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-3] Getting all accounts
+2024-01-15 08:38:46,228 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-2] Getting all accounts
+2024-01-15 08:38:46,231 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-4] Getting all accounts
+2024-01-15 08:38:46,231 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-11] Getting all accounts
+2024-01-15 08:38:46,233 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-9] Getting all accounts
+2024-01-15 08:38:46,236 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-7] Getting all accounts
+2024-01-15 08:38:46,252 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-12] Getting all accounts
+2024-01-15 08:38:46,252 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-6] Getting all accounts
+2024-01-15 08:38:46,252 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-1] Getting all accounts
+2024-01-15 08:38:46,255 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-13] Getting all accounts
+2024-01-15 08:38:46,255 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-4] Getting all accounts
+2024-01-15 08:38:46,255 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-2] Getting all accounts
+2024-01-15 08:38:46,255 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-3] Getting all accounts
+2024-01-15 08:38:46,487 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-11] Getting all accounts
+2024-01-15 08:38:46,488 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-7] Updating account AccountDTO(id=103, iban=1, sold=1, currency=1, bank=1, name=1)
+2024-01-15 08:38:46,488 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-1] Updating account AccountDTO(id=112, iban=3, sold=3, currency=3, bank=3, name=3)
+2024-01-15 08:38:46,490 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-9] Deleting account with id 152
+2024-01-15 08:38:46,491 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-6] Updating account AccountDTO(id=120, iban=6, sold=6, currency=6, bank=6, name=6)
+2024-01-15 08:38:46,493 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-12] Updating account AccountDTO(id=118, iban=2, sold=2, currency=2, bank=2, name=2)
+2024-01-15 08:38:46,507 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-4] Updating account AccountDTO(id=119, iban=5, sold=5, currency=5, bank=5, name=5)
+2024-01-15 08:38:46,507 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-3] Updating account AccountDTO(id=113, iban=4, sold=4, currency=4, bank=4, name=4)
+2024-01-15 08:39:11,669 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-13] Getting all accounts
+2024-01-15 08:41:34,592 [INFO] org.springframework.web.socket.config.WebSocketMessageBrokerStats [MessageBroker-12] WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 3 total, 0 closed abnormally (0 connect failure, 0 send limit, 3 transport error)], stompSubProtocol[processed CONNECT(3)-CONNECTED(3)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 3, active threads = 0, queued tasks = 0, completed tasks = 27], outboundChannel[pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 32], sockJsScheduler[pool size = 16, active threads = 1, queued tasks = 1, completed tasks = 256]
+2024-01-15 08:42:26,339 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-1] Getting all accounts
+2024-01-15 08:43:52,909 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-2] Added new account AccountDTO(id=null, iban=RO, sold=111, currency=RON, bank=BT, name=Account)
+2024-01-15 08:44:08,312 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-13] Getting all accounts
+2024-01-15 08:44:08,313 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-11] Getting all accounts
+2024-01-15 08:44:08,317 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-9] Getting all accounts
+2024-01-15 08:44:08,335 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-2] Getting all accounts
+2024-01-15 08:44:08,336 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-7] Getting all accounts
+2024-01-15 08:44:08,335 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-12] Getting all accounts
+2024-01-15 08:44:08,336 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-3] Getting all accounts
+2024-01-15 08:44:08,337 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-4] Getting all accounts
+2024-01-15 08:44:08,337 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-13] Getting all accounts
+2024-01-15 08:44:08,337 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-1] Getting all accounts
+2024-01-15 08:44:08,338 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-6] Getting all accounts
+2024-01-15 08:44:08,341 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-14] Getting all accounts
+2024-01-15 08:44:08,341 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-16] Getting all accounts
+2024-01-15 08:44:08,345 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-15] Getting all accounts
+2024-01-15 08:44:10,959 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-3] Deleting account with id 153
+2024-01-15 08:44:10,959 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-13] Getting all accounts
+2024-01-15 08:44:10,960 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-11] Updating account AccountDTO(id=113, iban=4, sold=4, currency=4, bank=4, name=4)
+2024-01-15 08:44:10,960 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-9] Updating account AccountDTO(id=119, iban=5, sold=5, currency=5, bank=5, name=5)
+2024-01-15 08:44:10,959 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-4] Updating account AccountDTO(id=112, iban=3, sold=3, currency=3, bank=3, name=3)
+2024-01-15 08:44:10,960 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-12] Updating account AccountDTO(id=103, iban=1, sold=1, currency=1, bank=1, name=1)
+2024-01-15 08:44:10,959 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-14] Updating account AccountDTO(id=120, iban=6, sold=6, currency=6, bank=6, name=6)
+2024-01-15 08:44:10,959 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-7] Updating account AccountDTO(id=118, iban=2, sold=2, currency=2, bank=2, name=2)
+2024-01-15 08:44:13,408 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-4] Deleting account with id 153
+2024-01-15 08:44:13,414 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-4] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Account not found!] with root cause
+java.lang.RuntimeException: Account not found!
+	at com.example.bankaccounts.service.AccountService.lambda$deleteAccount$1(AccountService.java:29)
+	at java.base/java.util.Optional.ifPresentOrElse(Optional.java:198)
+	at com.example.bankaccounts.service.AccountService.deleteAccount(AccountService.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:713)
+	at com.example.bankaccounts.service.AccountService$$SpringCGLIB$$0.deleteAccount(<generated>)
+	at com.example.bankaccounts.controller.AccountController.deleteAccount(AccountController.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:262)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2024-01-15 08:44:21,821 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-2] Getting all accounts
+2024-01-15 08:44:45,235 [INFO] com.example.bankaccounts.controller.AccountController [http-nio-8080-exec-16] Added new account AccountDTO(id=null, iban=RO, sold=111, currency=RON, bank=BT, name=Account)
+2024-01-15 08:47:35,783 [INFO] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler [SpringApplicationShutdownHook] Stopping...
+2024-01-15 08:47:35,783 [INFO] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler [SpringApplicationShutdownHook] BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@36ae17ef]]
+2024-01-15 08:47:35,783 [INFO] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler [SpringApplicationShutdownHook] Stopped.
+2024-01-15 08:47:35,804 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-15 08:47:35,807 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-01-15 08:47:35,810 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
