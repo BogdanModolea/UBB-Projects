@@ -153,4 +153,28 @@ Almost all my University Laboratories and Seminaries work should be there.
       </li>
     </ul>
   </li>
+  <li>🗃️ Semester 6  
+    <ul>
+      <li>
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%206/Android%20Things">
+          🎮 Android Things
+        </a>
+      </li>
+      <li>
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%206/Design%20Patterns">
+          🧱 Design Patterns
+        </a>
+      </li>
+      <li>
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%206/Numerical%20Calculus">
+          ⛓️ Numerical Calculus
+        </a>
+      </li>
+      <li>
+        <a href = "https://github.com/BogdanModolea/UBB-Projects/tree/main/Semester%206/Software%20Systems%20Validation%20and%20Verification">
+           ✅ Software Systems Validation and Verification
+        </a>
+      </li>
+    </ul>
+  </li>
 </ul>
